@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Sina Steel</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">Sina Steel</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-en="Home" data-ar="الرئيسية">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link" data-en="Products" data-ar="المنتجات">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link" data-en="Projects" data-ar="المشاريع">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link" data-en="Services" data-ar="الخدمات">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" data-en="About" data-ar="من نحن">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">عربي</button>
+                    
+                </div>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-en="Industry News & Insights" data-ar="أخبار الصناعة والرؤى">Industry News & Insights</h1>
+                <p class="hero-subtitle" data-en="Stay updated with the latest trends, innovations, and case studies in the stainless steel industry" data-ar="ابق على اطلاع بأحدث الاتجاهات والابتكارات ودراسات الحالة في صناعة الفولاذ المقاوم للصدأ">Stay updated with the latest trends, innovations, and case studies in the stainless steel industry</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Filter Section -->
+    <section class="blog-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-en="All Articles" data-ar="جميع المقالات">All Articles</button>
+                <button class="filter-btn" data-filter="news" data-en="Industry News" data-ar="أخبار الصناعة">Industry News</button>
+                <button class="filter-btn" data-filter="case-study" data-en="Case Studies" data-ar="دراسات الحالة">Case Studies</button>
+                <button class="filter-btn" data-filter="technical" data-en="Technical" data-ar="تقني">Technical</button>
+                <button class="filter-btn" data-filter="innovation" data-en="Innovation" data-ar="الابتكار">Innovation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content Section -->
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-layout">
+                <!-- Main Blog Posts -->
+                <div class="blog-main">
+                    <div class="blog-posts" id="blog-posts">
+                        <!-- Featured Article -->
+                        <article class="blog-post featured" data-category="news">
+                            <div class="post-image">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=400&fit=crop" alt="Stainless Steel Innovation">
+                                <div class="post-category">Industry News</div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">December 15, 2023</span>
+                                    <span class="post-read-time" data-en="5 min read" data-ar="5 دقائق قراءة">5 min read</span>
+                                </div>
+                                <h2 class="post-title" data-en="The Future of Stainless Steel in Food Industry" data-ar="مستقبل الفولاذ المقاوم للصدأ في صناعة الأغذية">The Future of Stainless Steel in Food Industry</h2>
+                                <p class="post-excerpt" data-en="Exploring the latest innovations and trends in stainless steel applications for food processing, including new alloys and surface treatments that enhance hygiene and durability." data-ar="استكشاف أحدث الابتكارات والاتجاهات في تطبيقات الفولاذ المقاوم للصدأ لمعالجة الأغذية، بما في ذلك السبائك الجديدة والعلاجات السطحية التي تعزز النظافة والمتانة.">
+                                    Exploring the latest innovations and trends in stainless steel applications for food processing, including new alloys and surface treatments that enhance hygiene and durability.
+                                </p>
+                                <a href="#" class="read-more-btn" data-en="Read More" data-ar="اقرأ المزيد">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Regular Articles -->
+                        <article class="blog-post" data-category="case-study">
+                            <div class="post-image">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop" alt="Pharmaceutical Case Study">
+                                <div class="post-category">Case Study</div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">December 10, 2023</span>
+                                    <span class="post-read-time" data-en="7 min read" data-ar="7 دقائق قراءة">7 min read</span>
+                                </div>
+                                <h3 class="post-title" data-en="Successful Pharmaceutical Facility Upgrade" data-ar="ترقية منشأة صيدلانية ناجحة">Successful Pharmaceutical Facility Upgrade</h3>
+                                <p class="post-excerpt" data-en="A detailed case study of how we helped a major pharmaceutical company upgrade their stainless steel equipment to meet new regulatory standards." data-ar="دراسة حالة مفصلة حول كيفية مساعدتنا لشركة صيدلانية كبرى في ترقية معدات الفولاذ المقاوم للصدأ لتلبية معايير تنظيمية جديدة.">
+                                    A detailed case study of how we helped a major pharmaceutical company upgrade their stainless steel equipment to meet new regulatory standards.
+                                </p>
+                                <a href="#" class="read-more-btn" data-en="Read More" data-ar="اقرأ المزيد">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post" data-category="technical">
+                            <div class="post-image">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop" alt="Technical Specifications">
+                                <div class="post-category">Technical</div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">December 5, 2023</span>
+                                    <span class="post-read-time" data-en="6 min read" data-ar="6 دقائق قراءة">6 min read</span>
+                                </div>
+                                <h3 class="post-title" data-en="Understanding 316L vs 304 Stainless Steel" data-ar="فهم الفولاذ المقاوم للصدأ 316L مقابل 304">Understanding 316L vs 304 Stainless Steel</h3>
+                                <p class="post-excerpt" data-en="A comprehensive comparison of 316L and 304 stainless steel grades, their properties, applications, and when to choose each one for your project." data-ar="مقارنة شاملة بين درجات الفولاذ المقاوم للصدأ 316L و 304، خصائصها، تطبيقاتها، ومتى تختار كل منها لمشروعك.">
+                                    A comprehensive comparison of 316L and 304 stainless steel grades, their properties, applications, and when to choose each one for your project.
+                                </p>
+                                <a href="#" class="read-more-btn" data-en="Read More" data-ar="اقرأ المزيد">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post" data-category="innovation">
+                            <div class="post-image">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop" alt="Innovation in Manufacturing">
+                                <div class="post-category">Innovation</div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">November 28, 2023</span>
+                                    <span class="post-read-time" data-en="4 min read" data-ar="4 دقائق قراءة">4 min read</span>
+                                </div>
+                                <h3 class="post-title" data-en="Advanced Surface Treatment Technologies" data-ar="تقنيات المعالجة السطحية المتقدمة">Advanced Surface Treatment Technologies</h3>
+                                <p class="post-excerpt" data-en="Discover the latest surface treatment technologies that improve corrosion resistance, hygiene, and aesthetic appeal of stainless steel products." data-ar="اكتشف أحدث تقنيات المعالجة السطحية التي تحسن مقاومة التآكل والنظافة والجاذبية الجمالية لمنتجات الفولاذ المقاوم للصدأ.">
+                                    Discover the latest surface treatment technologies that improve corrosion resistance, hygiene, and aesthetic appeal of stainless steel products.
+                                </p>
+                                <a href="#" class="read-more-btn" data-en="Read More" data-ar="اقرأ المزيد">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post" data-category="news">
+                            <div class="post-image">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop" alt="Industry Trends">
+                                <div class="post-category">Industry News</div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">November 20, 2023</span>
+                                    <span class="post-read-time" data-en="5 min read" data-ar="5 دقائق قراءة">5 min read</span>
+                                </div>
+                                <h3 class="post-title" data-en="Global Stainless Steel Market Trends 2024" data-ar="اتجاهات سوق الفولاذ المقاوم للصدأ العالمي 2024">Global Stainless Steel Market Trends 2024</h3>
+                                <p class="post-excerpt" data-en="An analysis of the global stainless steel market trends, including demand forecasts, price movements, and emerging opportunities in different regions." data-ar="تحليل اتجاهات سوق الفولاذ المقاوم للصدأ العالمي، بما في ذلك توقعات الطلب وحركات الأسعار والفرص الناشئة في مناطق مختلفة.">
+                                    An analysis of the global stainless steel market trends, including demand forecasts, price movements, and emerging opportunities in different regions.
+                                </p>
+                                <a href="#" class="read-more-btn" data-en="Read More" data-ar="اقرأ المزيد">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post" data-category="case-study">
+                            <div class="post-image">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop" alt="Chemical Industry Project">
+                                <div class="post-category">Case Study</div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">November 15, 2023</span>
+                                    <span class="post-read-time" data-en="8 min read" data-ar="8 دقائق قراءة">8 min read</span>
+                                </div>
+                                <h3 class="post-title" data-en="Chemical Processing Plant Modernization" data-ar="تحديث مصنع المعالجة الكيميائية">Chemical Processing Plant Modernization</h3>
+                                <p class="post-excerpt" data-en="How we modernized a 20-year-old chemical processing plant with advanced stainless steel solutions, improving efficiency and safety standards." data-ar="كيف قمنا بتحديث مصنع معالجة كيميائية عمره 20 عاماً بحلول فولاذ مقاوم للصدأ متقدمة، مما يحسن معايير الكفاءة والسلامة.">
+                                    How we modernized a 20-year-old chemical processing plant with advanced stainless steel solutions, improving efficiency and safety standards.
+                                </p>
+                                <a href="#" class="read-more-btn" data-en="Read More" data-ar="اقرأ المزيد">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Load More Button -->
+                    <div class="load-more-container">
+                        <button class="load-more-btn" data-en="Load More Articles" data-ar="تحميل المزيد من المقالات">Load More Articles</button>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <!-- Search Widget -->
+                    <div class="sidebar-widget">
+                        <h3 data-en="Search Articles" data-ar="البحث في المقالات">Search Articles</h3>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search..." data-en-placeholder="Search..." data-ar-placeholder="بحث..." data-zh-placeholder="搜索...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget">
+                        <h3 data-en="Categories" data-ar="الفئات">Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#" data-en="Industry News" data-ar="أخبار الصناعة">Industry News <span>(12)</span></a></li>
+                            <li><a href="#" data-en="Case Studies" data-ar="دراسات الحالة">Case Studies <span>(8)</span></a></li>
+                            <li><a href="#" data-en="Technical" data-ar="تقني">Technical <span>(15)</span></a></li>
+                            <li><a href="#" data-en="Innovation" data-ar="الابتكار">Innovation <span>(6)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Recent Posts Widget -->
+                    <div class="sidebar-widget">
+                        <h3 data-en="Recent Posts" data-ar="المشاركات الأخيرة">Recent Posts</h3>
+                        <div class="recent-posts">
+                            <div class="recent-post">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=80&h=80&fit=crop" alt="Recent Post">
+                                <div class="recent-post-content">
+                                    <h4 data-en="Stainless Steel Maintenance Tips" data-ar="نصائح صيانة الفولاذ المقاوم للصدأ">Stainless Steel Maintenance Tips</h4>
+                                    <span class="recent-post-date">Dec 12, 2023</span>
+                                </div>
+                            </div>
+                            <div class="recent-post">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=80&h=80&fit=crop" alt="Recent Post">
+                                <div class="recent-post-content">
+                                    <h4 data-en="Quality Control Standards" data-ar="معايير مراقبة الجودة">Quality Control Standards</h4>
+                                    <span class="recent-post-date">Dec 8, 2023</span>
+                                </div>
+                            </div>
+                            <div class="recent-post">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=80&h=80&fit=crop" alt="Recent Post">
+                                <div class="recent-post-content">
+                                    <h4 data-en="Welding Techniques" data-ar="تقنيات اللحام">Welding Techniques</h4>
+                                    <span class="recent-post-date">Dec 3, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Widget -->
+                    <div class="sidebar-widget newsletter-widget">
+                        <h3 data-en="Newsletter" data-ar="النشرة الإخبارية">Newsletter</h3>
+                        <p data-en="Subscribe to get the latest industry insights and updates" data-ar="اشترك للحصول على أحدث الرؤى والتحديثات الصناعية">Subscribe to get the latest industry insights and updates</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" data-en-placeholder="Your email address" data-ar-placeholder="عنوان بريدك الإلكتروني" data-zh-placeholder="您的电子邮件地址">
+                            <button type="submit" data-en="Subscribe" data-ar="اشترك">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="blog-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Need Expert Advice?" data-ar="تحتاج إلى نصيحة خبيرة؟">Need Expert Advice?</h2>
+                <p data-en="Our team of stainless steel experts is here to help you with technical questions, project planning, and industry insights." data-ar="فريق خبراء الفولاذ المقاوم للصدأ لدينا هنا لمساعدتك في الأسئلة التقنية وتخطيط المشاريع ورؤى الصناعة.">
+                    Our team of stainless steel experts is here to help you with technical questions, project planning, and industry insights.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary" data-en="Contact Our Experts" data-ar="تواصل مع خبرائنا">Contact Our Experts</a>
+                    <a href="https://wa.me/201067902515" class="btn-secondary" target="_blank" data-en="WhatsApp" data-ar="واتساب">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/201067902515" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span data-en="Contact Us Now" data-ar="اتصل بنا الآن">Contact Us Now</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sina Steel</h3>
+                    <p data-en="Premium stainless steel solutions for all industries" data-ar="حلول الفولاذ المقاوم للصدأ المتميزة لجميع الصناعات">Premium stainless steel solutions for all industries</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="products.html" data-en="Products" data-ar="المنتجات">Products</a></li>
+                        <li><a href="about.html" data-en="About" data-ar="من نحن">About</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h3>
+                    <p>+201067902515</p>
+                    <p>+201060977942</p>
+                    <p>sinasteel10@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Current Date" data-ar="التاريخ الحالي">Current Date</h3>
+                    <div class="calendar">
+                        <div class="date-display" id="current-date"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/193xLV6zwg/?mibextid=wwXIfr" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="developer-credit">
+                    <p data-en="Developer Rights: Mahmoud" data-ar="حقوق المطور: Mahmoud">Developer Rights: <a href="https://www.facebook.com/share/19gHnKn7Rj/" target="_blank">Mahmoud</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/blog.js"></script>
+</body>
+</html>

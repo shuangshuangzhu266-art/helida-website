@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Test - Sina Steel</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div style="padding: 2rem; background: var(--primary-color); color: var(--text-primary);">
+        <h1>Clock Test Page</h1>
+        <p>This page tests the clock functionality.</p>
+        
+        <div class="calendar" style="margin: 2rem 0; padding: 1rem; background: var(--secondary-color); border-radius: 8px;">
+            <div class="date-display" id="current-date"></div>
+        </div>
+        
+        <button onclick="window.SinaSteel.forceUpdateClock()" style="padding: 1rem 2rem; background: var(--accent-color); color: var(--primary-color); border: none; border-radius: 8px; cursor: pointer; margin: 1rem 0;">
+            Force Update Clock
+        </button>
+        
+        <button onclick="window.SinaSteel.startDateTimeUpdate()" style="padding: 1rem 2rem; background: var(--accent-color); color: var(--primary-color); border: none; border-radius: 8px; cursor: pointer; margin: 1rem 0;">
+            Start Clock
+        </button>
+        
+        <div style="margin-top: 2rem;">
+            <h3>Debug Info:</h3>
+            <p>Interval ID: <span id="interval-id">Not set</span></p>
+            <p>Last Update: <span id="last-update">Never</span></p>
+        </div>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Update debug info
+        setInterval(() => {
+            document.getElementById('interval-id').textContent = window.dateTimeInterval || 'Not set';
+            document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
+        }, 1000);
+    </script>
+</body>
+</html>

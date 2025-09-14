@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Sina Steel</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">Sina Steel</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-en="Home" data-ar="الرئيسية">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link active" data-en="Products" data-ar="المنتجات">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link" data-en="Projects" data-ar="المشاريع">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link" data-en="Services" data-ar="الخدمات">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" data-en="About" data-ar="من نحن">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">عربي</button>
+                    
+                </div>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-en="Our Products" data-ar="منتجاتنا">Our Products</h1>
+                <p class="hero-subtitle" data-en="Premium stainless steel solutions for all industries" data-ar="حلول الفولاذ المقاوم للصدأ المتميزة لجميع الصناعات">Premium stainless steel solutions for all industries</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Filter -->
+    <section class="product-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-en="All Products" data-ar="جميع المنتجات">All Products</button>
+                <button class="filter-btn" data-filter="sheets" data-en="Sheets" data-ar="الألواح">Sheets</button>
+                <button class="filter-btn" data-filter="coils" data-en="Coils" data-ar="اللفائف">Coils</button>
+                <button class="filter-btn" data-filter="angles" data-en="Angles" data-ar="الزوايا">Angles</button>
+                <button class="filter-btn" data-filter="flats" data-en="Flats" data-ar="المسطحات">Flats</button>
+                <button class="filter-btn" data-filter="pipes" data-en="Pipes" data-ar="الأنابيب">Pipes</button>
+                <button class="filter-btn" data-filter="bars" data-en="Bars" data-ar="القضبان">Bars</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Stainless Steel Sheets -->
+                <div class="product-item" data-category="sheets">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Stainless Steel Sheets">
+                        <div class="product-overlay">
+                            <a href="product-detail.html?product=sheets" class="view-details-btn" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Stainless Steel Sheets" data-ar="ألواح الفولاذ المقاوم للصدأ">Stainless Steel Sheets</h3>
+                        <p data-en="Grades 304, 316, 201 - Food Grade Quality" data-ar="درجات 304، 316، 201 - جودة صالحة للأغذية">Grades 304, 316, 201 - Food Grade Quality</p>
+                        <div class="product-specs">
+                            <span data-en="Thickness: 0.5mm - 50mm" data-ar="السماكة: 0.5مم - 50مم">Thickness: 0.5mm - 50mm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stainless Steel Coils -->
+                <div class="product-item" data-category="coils">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Stainless Steel Coils">
+                        <div class="product-overlay">
+                            <a href="product-detail.html?product=coils" class="view-details-btn" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Stainless Steel Coils" data-ar="لفائف الفولاذ المقاوم للصدأ">Stainless Steel Coils</h3>
+                        <p data-en="Grades 304, 316, 201 - Various Widths" data-ar="درجات 304، 316، 201 - أطوال مختلفة">Grades 304, 316, 201 - Various Widths</p>
+                        <div class="product-specs">
+                            <span data-en="Width: 1000mm - 2000mm" data-ar="العرض: 1000مم - 2000مم">Width: 1000mm - 2000mm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stainless Steel Angles -->
+                <div class="product-item" data-category="angles">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Stainless Steel Angles">
+                        <div class="product-overlay">
+                            <a href="product-detail.html?product=angles" class="view-details-btn" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Stainless Steel Angles" data-ar="زوايا الفولاذ المقاوم للصدأ">Stainless Steel Angles</h3>
+                        <p data-en="L-Shaped Profiles - Structural Applications" data-ar="مقاطع على شكل L - تطبيقات هيكلية">L-Shaped Profiles - Structural Applications</p>
+                        <div class="product-specs">
+                            <span data-en="Sizes: 20x20mm - 200x200mm" data-ar="الأحجام: 20x20مم - 200x200مم">Sizes: 20x20mm - 200x200mm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stainless Steel Flats -->
+                <div class="product-item" data-category="flats">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Stainless Steel Flats">
+                        <div class="product-overlay">
+                            <a href="product-detail.html?product=flats" class="view-details-btn" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Stainless Steel Flats" data-ar="مسطحات الفولاذ المقاوم للصدأ">Stainless Steel Flats</h3>
+                        <p data-en="Rectangular Bars - Precision Machining" data-ar="قضبان مستطيلة - تشغيل دقيق">Rectangular Bars - Precision Machining</p>
+                        <div class="product-specs">
+                            <span data-en="Thickness: 3mm - 50mm" data-ar="السماكة: 3مم - 50مم">Thickness: 3mm - 50mm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stainless Steel Pipes -->
+                <div class="product-item" data-category="pipes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Stainless Steel Pipes">
+                        <div class="product-overlay">
+                            <a href="product-detail.html?product=pipes" class="view-details-btn" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Stainless Steel Pipes" data-ar="أنابيب الفولاذ المقاوم للصدأ">Stainless Steel Pipes</h3>
+                        <p data-en="Seamless & Welded - Industrial Applications" data-ar="بدون لحام ومطوية - تطبيقات صناعية">Seamless & Welded - Industrial Applications</p>
+                        <div class="product-specs">
+                            <span data-en="Diameter: 6mm - 500mm" data-ar="القطر: 6مم - 500مم">Diameter: 6mm - 500mm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stainless Steel Bars -->
+                <div class="product-item" data-category="bars">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Stainless Steel Bars">
+                        <div class="product-overlay">
+                            <a href="product-detail.html?product=bars" class="view-details-btn" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Stainless Steel Bars" data-ar="قضبان الفولاذ المقاوم للصدأ">Stainless Steel Bars</h3>
+                        <p data-en="Round & Square Bars - Machining Grade" data-ar="قضبان دائرية ومربعة - درجة تشغيل">Round & Square Bars - Machining Grade</p>
+                        <div class="product-specs">
+                            <span data-en="Diameter: 5mm - 200mm" data-ar="القطر: 5مم - 200مم">Diameter: 5mm - 200mm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="modal-main-image" src="" alt="Product Image">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <img class="thumbnail active" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=100&h=100&fit=crop" alt="Thumbnail">
+                        <img class="thumbnail" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=100&h=100&fit=crop" alt="Thumbnail">
+                        <img class="thumbnail" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=100&h=100&fit=crop" alt="Thumbnail">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h2 id="modal-product-name"></h2>
+                    <p id="modal-product-description"></p>
+                    
+                    <div class="specifications">
+                        <h3 data-en="Specifications" data-ar="المواصفات">Specifications</h3>
+                        <table id="specs-table">
+                            <tbody>
+                                <!-- Dynamic content -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="rfq-form">
+                        <h3 data-en="Request Quote" data-ar="طلب عرض سعر">Request Quote</h3>
+                        <form id="product-rfq-form">
+                            <div class="form-group">
+                                <label data-en="Name *" data-ar="الاسم *">Name *</label>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-en="Mobile Number *" data-ar="رقم الموبايل *">Mobile Number *</label>
+                                <input type="tel" name="mobile" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+                                <input type="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label data-en="Quantity" data-ar="الكمية">Quantity</label>
+                                <input type="text" name="quantity" placeholder="e.g., 100 pieces">
+                            </div>
+                            <div class="form-group">
+                                <label data-en="Dimensions/Measurements" data-ar="الأبعاد/القياسات">Dimensions/Measurements</label>
+                                <textarea name="dimensions" rows="3" placeholder="e.g., 1000mm x 2000mm x 2mm"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label data-en="Additional Requirements" data-ar="متطلبات إضافية">Additional Requirements</label>
+                                <textarea name="requirements" rows="3" placeholder="Any specific requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn" data-en="Send Quote Request" data-ar="إرسال طلب عرض السعر">Send Quote Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/201067902515" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span data-en="Contact Us Now" data-ar="اتصل بنا الآن">Contact Us Now</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sina Steel</h3>
+                    <p data-en="Premium stainless steel solutions for all industries" data-ar="حلول الفولاذ المقاوم للصدأ المتميزة لجميع الصناعات">Premium stainless steel solutions for all industries</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="products.html" data-en="Products" data-ar="المنتجات">Products</a></li>
+                        <li><a href="about.html" data-en="About" data-ar="من نحن">About</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h3>
+                    <p>+201067902515</p>
+                    <p>+201060977942</p>
+                    <p>sinasteel10@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Current Date" data-ar="التاريخ الحالي">Current Date</h3>
+                    <div class="calendar">
+                        <div class="date-display" id="current-date"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/193xLV6zwg/?mibextid=wwXIfr" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="developer-credit">
+                    <p data-en="Developer Rights: Mahmoud" data-ar="حقوق المطور: Mahmoud">Developer Rights: <a href="https://www.facebook.com/share/19gHnKn7Rj/" target="_blank">Mahmoud</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/products.js"></script>
+</body>
+</html>

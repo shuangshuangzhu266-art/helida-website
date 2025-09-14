@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sina Steel</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">Sina Steel</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-en="Home" data-ar="الرئيسية">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link" data-en="Products" data-ar="المنتجات">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active" data-en="Projects" data-ar="المشاريع">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link" data-en="Services" data-ar="الخدمات">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" data-en="About" data-ar="من نحن">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">عربي</button>
+                    
+                </div>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero Section -->
+    <section class="projects-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-en="Our Projects" data-ar="مشاريعنا">Our Projects</h1>
+                <p class="hero-subtitle" data-en="Showcasing our successful stainless steel implementations across various industries" data-ar="عرض تنفيذاتنا الناجحة للفولاذ المقاوم للصدأ عبر مختلف الصناعات">Showcasing our successful stainless steel implementations across various industries</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Filter Section -->
+    <section class="project-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-en="All Projects" data-ar="جميع المشاريع">All Projects</button>
+                <button class="filter-btn" data-filter="food" data-en="Food Industry" data-ar="صناعة الأغذية">Food Industry</button>
+                <button class="filter-btn" data-filter="pharmaceutical" data-en="Pharmaceutical" data-ar="الصناعة الصيدلانية">Pharmaceutical</button>
+                <button class="filter-btn" data-filter="chemical" data-en="Chemical" data-ar="الصناعة الكيميائية">Chemical</button>
+                <button class="filter-btn" data-filter="construction" data-en="Construction" data-ar="البناء">Construction</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery Section -->
+    <section class="projects-gallery">
+        <div class="container">
+            <div class="projects-grid" id="projects-grid">
+                <!-- Food Industry Project 1 -->
+                <div class="project-item" data-category="food">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop" alt="Food Processing Plant">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 data-en="Food Processing Plant" data-ar="مصنع معالجة الأغذية">Food Processing Plant</h3>
+                                <p data-en="Complete stainless steel solution for food processing facility" data-ar="حل فولاذ مقاوم للصدأ كامل لمنشأة معالجة الأغذية">Complete stainless steel solution for food processing facility</p>
+                                <a href="project-detail.html?project=food-processing-plant" class="view-project-btn" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category" data-en="Food Industry" data-ar="صناعة الأغذية">Food Industry</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                </div>
+
+                <!-- Pharmaceutical Project -->
+                <div class="project-item" data-category="pharmaceutical">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop" alt="Pharmaceutical Facility">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 data-en="Pharmaceutical Facility" data-ar="منشأة صيدلانية">Pharmaceutical Facility</h3>
+                                <p data-en="Sterile stainless steel components for pharmaceutical manufacturing" data-ar="مكونات فولاذ مقاوم للصدأ معقمة لتصنيع الأدوية">Sterile stainless steel components for pharmaceutical manufacturing</p>
+                                <a href="project-detail.html?project=pharmaceutical-facility" class="view-project-btn" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category" data-en="Pharmaceutical" data-ar="الصناعة الصيدلانية">Pharmaceutical</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                </div>
+
+                <!-- Chemical Industry Project -->
+                <div class="project-item" data-category="chemical">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop" alt="Chemical Processing Plant">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 data-en="Chemical Processing Plant" data-ar="مصنع المعالجة الكيميائية">Chemical Processing Plant</h3>
+                                <p data-en="Corrosion-resistant stainless steel for chemical applications" data-ar="فولاذ مقاوم للصدأ مقاوم للتآكل للتطبيقات الكيميائية">Corrosion-resistant stainless steel for chemical applications</p>
+                                <a href="project-detail.html?project=chemical-processing-plant" class="view-project-btn" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category" data-en="Chemical" data-ar="الصناعة الكيميائية">Chemical</span>
+                        <span class="project-year">2022</span>
+                    </div>
+                </div>
+
+                <!-- Construction Project -->
+                <div class="project-item" data-category="construction">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop" alt="Modern Building">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 data-en="Modern Building" data-ar="مبنى حديث">Modern Building</h3>
+                                <p data-en="Architectural stainless steel for modern construction" data-ar="فولاذ مقاوم للصدأ معماري للبناء الحديث">Architectural stainless steel for modern construction</p>
+                                <a href="project-detail.html?project=modern-building" class="view-project-btn" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category" data-en="Construction" data-ar="البناء">Construction</span>
+                        <span class="project-year">2022</span>
+                    </div>
+                </div>
+
+                <!-- Food Industry Project 2 -->
+                <div class="project-item" data-category="food">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop" alt="Dairy Processing">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 data-en="Dairy Processing Facility" data-ar="منشأة معالجة الألبان">Dairy Processing Facility</h3>
+                                <p data-en="Food-grade stainless steel for dairy processing equipment" data-ar="فولاذ مقاوم للصدأ صالح للأغذية لمعدات معالجة الألبان">Food-grade stainless steel for dairy processing equipment</p>
+                                <a href="project-detail.html?project=dairy-processing-facility" class="view-project-btn" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category" data-en="Food Industry" data-ar="صناعة الأغذية">Food Industry</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                </div>
+
+                <!-- Pharmaceutical Project 2 -->
+                <div class="project-item" data-category="pharmaceutical">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop" alt="Laboratory Equipment">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 data-en="Laboratory Equipment" data-ar="معدات المختبر">Laboratory Equipment</h3>
+                                <p data-en="Precision stainless steel components for laboratory applications" data-ar="مكونات فولاذ مقاوم للصدأ دقيقة لتطبيقات المختبر">Precision stainless steel components for laboratory applications</p>
+                                <a href="project-detail.html?project=laboratory-equipment" class="view-project-btn" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category" data-en="Pharmaceutical" data-ar="الصناعة الصيدلانية">Pharmaceutical</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Detail Modal removed - now using separate project detail pages -->
+
+    <!-- CTA Section -->
+    <section class="projects-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Have a Project in Mind?" data-ar="لديك مشروع في ذهنك؟">Have a Project in Mind?</h2>
+                <p data-en="Let's discuss how we can help bring your stainless steel project to life with our expertise and quality solutions." data-ar="دعنا نناقش كيف يمكننا مساعدتك في إحياء مشروع الفولاذ المقاوم للصدأ بخبرتنا وحلول الجودة.">
+                    Let's discuss how we can help bring your stainless steel project to life with our expertise and quality solutions.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary" data-en="Start Your Project" data-ar="ابدأ مشروعك">Start Your Project</a>
+                    <a href="https://wa.me/201067902515" class="btn-secondary" target="_blank" data-en="WhatsApp" data-ar="واتساب">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/201067902515" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span data-en="Contact Us Now" data-ar="اتصل بنا الآن">Contact Us Now</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sina Steel</h3>
+                    <p data-en="Premium stainless steel solutions for all industries" data-ar="حلول الفولاذ المقاوم للصدأ المتميزة لجميع الصناعات">Premium stainless steel solutions for all industries</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="products.html" data-en="Products" data-ar="المنتجات">Products</a></li>
+                        <li><a href="about.html" data-en="About" data-ar="من نحن">About</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h3>
+                    <p>+201067902515</p>
+                    <p>+201060977942</p>
+                    <p>sinasteel10@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Current Date" data-ar="التاريخ الحالي">Current Date</h3>
+                    <div class="calendar">
+                        <div class="date-display" id="current-date"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/193xLV6zwg/?mibextid=wwXIfr" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="developer-credit">
+                    <p data-en="Developer Rights: Mahmoud" data-ar="حقوق المطور: Mahmoud">Developer Rights: <a href="https://www.facebook.com/share/19gHnKn7Rj/" target="_blank">Mahmoud</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+</html>

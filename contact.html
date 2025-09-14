@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sina Steel</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">Sina Steel</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-en="Home" data-ar="الرئيسية">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link" data-en="Products" data-ar="المنتجات">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link" data-en="Projects" data-ar="المشاريع">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link" data-en="Services" data-ar="الخدمات">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" data-en="About" data-ar="من نحن">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">عربي</button>
+                    
+                </div>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h1>
+                <p class="hero-subtitle" data-en="Get in touch for your stainless steel needs" data-ar="تواصل معنا لاحتياجاتك من الفولاذ المقاوم للصدأ">Get in touch for your stainless steel needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main RFQ Form Section -->
+    <section class="rfq-section">
+        <div class="container">
+            <div class="rfq-container">
+                <div class="rfq-form-container">
+                    <h2 data-en="Request a Quote" data-ar="اطلب عرض سعر">Request a Quote</h2>
+                    <p data-en="Fill out the form below and we'll get back to you within 24 hours" data-ar="املأ النموذج أدناه وسنعاود الاتصال بك خلال 24 ساعة">Fill out the form below and we'll get back to you within 24 hours</p>
+                    
+                    <form id="main-rfq-form" class="main-rfq-form" data-form-type="rfq">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-en="Full Name *" data-ar="الاسم الكامل *">Full Name *</label>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-en="Mobile Number *" data-ar="رقم الموبايل *">Mobile Number *</label>
+                                <input type="tel" name="mobile" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+                                <input type="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label data-en="Company Name" data-ar="اسم الشركة">Company Name</label>
+                                <input type="text" name="company">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label data-en="Product Interest" data-ar="المنتج المطلوب">Product Interest</label>
+                            <select name="product">
+                                <option value="" data-en="Select a product" data-ar="اختر منتج">Select a product</option>
+                                <option value="sheets" data-en="Stainless Steel Sheets" data-ar="ألواح الفولاذ المقاوم للصدأ">Stainless Steel Sheets</option>
+                                <option value="coils" data-en="Stainless Steel Coils" data-ar="لفائف الفولاذ المقاوم للصدأ">Stainless Steel Coils</option>
+                                <option value="angles" data-en="Stainless Steel Angles" data-ar="زوايا الفولاذ المقاوم للصدأ">Stainless Steel Angles</option>
+                                <option value="flats" data-en="Stainless Steel Flats" data-ar="مسطحات الفولاذ المقاوم للصدأ">Stainless Steel Flats</option>
+                                <option value="pipes" data-en="Stainless Steel Pipes" data-ar="أنابيب الفولاذ المقاوم للصدأ">Stainless Steel Pipes</option>
+                                <option value="bars" data-en="Stainless Steel Bars" data-ar="قضبان الفولاذ المقاوم للصدأ">Stainless Steel Bars</option>
+                                <option value="other" data-en="Other" data-ar="أخرى">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-en="Quantity" data-ar="الكمية">Quantity</label>
+                                <input type="text" name="quantity" placeholder="e.g., 100 pieces">
+                            </div>
+                            <div class="form-group">
+                                <label data-en="Grade Preference" data-ar="تفضيل الدرجة">Grade Preference</label>
+                                <select name="grade">
+                                    <option value="" data-en="Select grade" data-ar="اختر الدرجة">Select grade</option>
+                                    <option value="304" data-en="304" data-ar="304">304</option>
+                                    <option value="316" data-en="316" data-ar="316">316</option>
+                                    <option value="201" data-en="201" data-ar="201">201</option>
+                                    <option value="other" data-en="Other" data-ar="أخرى">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label data-en="Dimensions/Measurements" data-ar="الأبعاد/القياسات">Dimensions/Measurements</label>
+                            <textarea name="dimensions" rows="3" placeholder="e.g., 1000mm x 2000mm x 2mm"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label data-en="Additional Requirements" data-ar="متطلبات إضافية">Additional Requirements</label>
+                            <textarea name="requirements" rows="4" placeholder="Please describe your specific requirements, delivery timeline, or any other details..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" data-en="Send Quote Request" data-ar="إرسال طلب عرض السعر">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Quote Request
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-container">
+                    <h3 data-en="Contact Information" data-ar="معلومات الاتصال">Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Phone Numbers" data-ar="أرقام الهاتف">Phone Numbers</h4>
+                            <p>+201067902515</p>
+                            <p>+201060977942</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Email" data-ar="البريد الإلكتروني">Email</h4>
+                            <p>sinasteel10@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Address" data-ar="العنوان">Address</h4>
+                            <p>Qalyub - Awal El-Bati</p>
+                            <a href="https://maps.google.com" target="_blank" class="map-link" data-en="View on Map" data-ar="عرض على الخريطة">View on Map</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Working Hours" data-ar="ساعات العمل">Working Hours</h4>
+                            <p data-en="Saturday - Thursday: 9:00 AM - 5:00 PM" data-ar="السبت - الخميس: 9:00 ص - 5:00 م">Saturday - Thursday: 9:00 AM - 5:00 PM</p>
+                            <p data-en="Friday: Closed" data-ar="الجمعة: مغلق">Friday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4 data-en="Follow Us" data-ar="تابعنا">Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/share/193xLV6zwg/?mibextid=wwXIfr" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Our Location" data-ar="موقعنا">Our Location</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.123456789!2d31.123456!3d30.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sQalyub!5e0!3m2!1sen!2seg!4v1234567890123!5m2!1sen!2seg"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/201067902515" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span data-en="Contact Us Now" data-ar="اتصل بنا الآن">Contact Us Now</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sina Steel</h3>
+                    <p data-en="Premium stainless steel solutions for all industries" data-ar="حلول الفولاذ المقاوم للصدأ المتميزة لجميع الصناعات">Premium stainless steel solutions for all industries</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="products.html" data-en="Products" data-ar="المنتجات">Products</a></li>
+                        <li><a href="about.html" data-en="About" data-ar="من نحن">About</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h3>
+                    <p>+201067902515</p>
+                    <p>+201060977942</p>
+                    <p>sinasteel10@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Current Date" data-ar="التاريخ الحالي">Current Date</h3>
+                    <div class="calendar">
+                        <div class="date-display" id="current-date"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/193xLV6zwg/?mibextid=wwXIfr" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="developer-credit">
+                    <p data-en="Developer Rights: Mahmoud" data-ar="حقوق المطور: Mahmoud">Developer Rights: <a href="https://www.facebook.com/share/19gHnKn7Rj/" target="_blank">Mahmoud</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>
