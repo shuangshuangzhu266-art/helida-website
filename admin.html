@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELIDA Admin - Product Manager</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #f0f2f5; color: #333; padding: 20px; }
+        .header { background: #1a1a2e; color: #fff; padding: 16px 24px; border-radius: 8px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .header h1 { font-size: 1.3rem; }
+        .header span { font-size: 0.8rem; opacity: 0.7; }
+        .toolbar { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
+        .btn { padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; font-weight: 500; transition: all 0.2s; }
+        .btn-primary { background: #1a5f8a; color: #fff; }
+        .btn-primary:hover { background: #0f3d5c; }
+        .btn-success { background: #10b981; color: #fff; }
+        .btn-success:hover { background: #059669; }
+        .btn-danger { background: #ef4444; color: #fff; }
+        .btn-danger:hover { background: #dc2626; }
+        .btn-outline { background: #fff; border: 1px solid #d1d5db; }
+        .btn-outline:hover { background: #f9fafb; }
+        .btn-sm { padding: 4px 10px; font-size: 0.8rem; }
+        .token-area { display: flex; gap: 8px; align-items: center; }
+        .token-area input { padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 4px; width: 280px; font-size: 0.85rem; }
+        .category { background: #fff; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); overflow: hidden; }
+        .cat-header { background: #f8fafc; padding: 12px 16px; border-bottom: 1px solid #e5e7eb; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+        .cat-header h2 { font-size: 1rem; }
+        .cat-body { padding: 12px; }
+        .cat-body.collapsed { display: none; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #f3f4f6; font-size: 0.85rem; }
+        th { background: #f9fafb; font-weight: 600; color: #6b7280; }
+        td input, td textarea { width: 100%; padding: 4px 8px; border: 1px solid #e5e7eb; border-radius: 4px; font-size: 0.85rem; font-family: inherit; }
+        td input:focus, td textarea:focus { outline: none; border-color: #1a5f8a; }
+        .img-preview { width: 60px; height: 60px; object-fit: cover; border-radius: 4px; border: 1px solid #e5e7eb; }
+        .status { padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 500; }
+        .status-saved { background: #d1fae5; color: #065f46; }
+        .status-unsaved { background: #fef3c7; color: #92400e; }
+        .empty-row { text-align: center; color: #9ca3af; padding: 20px; }
+        .toast { position: fixed; bottom: 20px; right: 20px; padding: 12px 20px; border-radius: 8px; color: #fff; font-weight: 500; z-index: 9999; animation: slideUp 0.3s ease; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>HELIDA Tools - Product Manager</h1>
+            <span>Edit products.json and download to upload to GitHub</span>
+        </div>
+        <div class="token-area">
+            <button class="btn btn-outline btn-sm" onclick="loadFromJSON()">🔄 Refresh</button>
+            <button class="btn btn-success" onclick="saveAndDownload()">💾 Save & Download</button>
+        </div>
+    </div>
+
+    <div class="toolbar">
+        <span style="font-weight:600;margin-right:auto;">Click a category header to expand/collapse</span>
+        <button class="btn btn-primary" onclick="addCategory()">+ Add Category</button>
+    </div>
+
+    <div id="categories"></div>
+
+    <div class="header" style="margin-top:20px;">
+        <span>After saving, upload the downloaded file to: <b>github.com/shuangshuangzhu266-art/helida-website → data/products.json</b></span>
+        <button class="btn btn-success btn-sm" onclick="window.open('https://github.com/shuangshuangzhu266-art/helida-website/upload/main/data','_blank')">Go to GitHub Upload</button>
+    </div>
+
+    <script>
+        const DATA_URL = 'data/products.json';
+        let data = null;
+
+        async function loadFromJSON() {
+            try {
+                const resp = await fetch(DATA_URL + '?t=' + Date.now());
+                data = await resp.json();
+                renderAll();
+                toast('Data loaded ✓', '#10b981');
+            } catch(e) {
+                toast('Failed to load products.json. Make sure you are on the live site.', '#ef4444');
+            }
+        }
+
+        function saveAndDownload() {
+            collectData();
+            const blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'products.json';
+            a.click();
+            URL.revokeObjectURL(a.href);
+            toast('File downloaded! Now upload it to GitHub →', '#1a5f8a');
+            setTimeout(() => window.open('https://github.com/shuangshuangzhu266-art/helida-website/upload/main/data', '_blank'), 1000);
+        }
+
+        function collectData() {
+            if (!data) return;
+            document.querySelectorAll('.category').forEach(catEl => {
+                const catId = catEl.dataset.catId;
+                const cat = data.categories.find(c => c.id === catId);
+                if (!cat) return;
+                cat.title_en = catEl.querySelector('.cat-title-en').value;
+                cat.title_zh = catEl.querySelector('.cat-title-zh').value;
+                cat.desc_en = catEl.querySelector('.cat-desc-en').value;
+                cat.desc_zh = catEl.querySelector('.cat-desc-zh').value;
+                cat.products = [];
+                catEl.querySelectorAll('.product-row').forEach(row => {
+                    cat.products.push({
+                        image: row.querySelector('.prod-image').value,
+                        name_en: row.querySelector('.prod-name-en').value,
+                        name_zh: row.querySelector('.prod-name-zh').value,
+                        size: row.querySelector('.prod-size').value
+                    });
+                });
+            });
+        }
+
+        function addCategory() {
+            const id = 'category-' + Date.now();
+            data.categories.push({
+                id: id, icon: 'fa-circle', title_en: 'New Category', title_zh: '新分类',
+                desc_en: 'Description', desc_zh: '描述',
+                products: [{image:'', name_en:'New Product', name_zh:'新产品', size:'Size'}]
+            });
+            renderAll();
+            toast('New category added', '#1a5f8a');
+        }
+
+        function addProduct(catId) {
+            const cat = data.categories.find(c => c.id === catId);
+            if (!cat) return;
+            cat.products.push({image:'', name_en:'New Product', name_zh:'新产品', size:'Size'});
+            renderAll();
+        }
+
+        function deleteProduct(catId, idx) {
+            const cat = data.categories.find(c => c.id === catId);
+            if (!cat) return;
+            cat.products.splice(idx, 1);
+            renderAll();
+        }
+
+        function deleteCategory(catId) {
+            if (!confirm('Delete this entire category?')) return;
+            data.categories = data.categories.filter(c => c.id !== catId);
+            renderAll();
+        }
+
+        function renderAll() {
+            if (!data || !data.categories) return;
+            const container = document.getElementById('categories');
+            container.innerHTML = data.categories.map(cat => `
+                <div class="category" data-cat-id="${cat.id}">
+                    <div class="cat-header" onclick="this.nextElementSibling.classList.toggle('collapsed')">
+                        <h2>📁 ${esc(cat.title_en)}</h2>
+                        <div style="display:flex;gap:8px;">
+                            <button class="btn btn-primary btn-sm" onclick="event.stopPropagation();addProduct('${cat.id}')">+ Add Product</button>
+                            <button class="btn btn-danger btn-sm" onclick="event.stopPropagation();deleteCategory('${cat.id}')">Delete</button>
+                        </div>
+                    </div>
+                    <div class="cat-body">
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;">
+                            <div><label style="font-size:0.8rem;color:#6b7280;">Category Name (EN)</label><input class="cat-title-en" value="${esc(cat.title_en)}"></div>
+                            <div><label style="font-size:0.8rem;color:#6b7280;">Category Name (ZH)</label><input class="cat-title-zh" value="${esc(cat.title_zh)}"></div>
+                            <div><label style="font-size:0.8rem;color:#6b7280;">Description (EN)</label><input class="cat-desc-en" value="${esc(cat.desc_en)}"></div>
+                            <div><label style="font-size:0.8rem;color:#6b7280;">Description (ZH)</label><input class="cat-desc-zh" value="${esc(cat.desc_zh)}"></div>
+                        </div>
+                        <table>
+                            <thead><tr><th style="width:60px;">Image</th><th>Image File</th><th>Name (EN)</th><th>Name (ZH)</th><th>Size/Spec</th><th style="width:60px;"></th></tr></thead>
+                            <tbody>
+                                ${cat.products.map((p, i) => `
+                                    <tr class="product-row">
+                                        <td><img class="img-preview" src="${esc(p.image)}" onerror="this.style.display='none'" loading="lazy"></td>
+                                        <td><input class="prod-image" value="${esc(p.image)}" placeholder="images/xxx.jpg"></td>
+                                        <td><input class="prod-name-en" value="${esc(p.name_en)}"></td>
+                                        <td><input class="prod-name-zh" value="${esc(p.name_zh)}"></td>
+                                        <td><input class="prod-size" value="${esc(p.size)}"></td>
+                                        <td><button class="btn btn-danger btn-sm" onclick="deleteProduct('${cat.id}',${i})">✕</button></td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+        function toast(msg, color) {
+            const t = document.createElement('div');
+            t.className = 'toast';
+            t.style.background = color;
+            t.textContent = msg;
+            document.body.appendChild(t);
+            setTimeout(() => t.remove(), 3000);
+        }
+
+        // Auto-load on page open
+        loadFromJSON();
+    </script>
+</body>
+</html>
