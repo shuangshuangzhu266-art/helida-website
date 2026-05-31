@@ -22,25 +22,6 @@
                 <span><i class="fas fa-phone"></i> 16630152768</span>
             </div>
             <div class="top-bar-right">
-                <div class="lang-switcher">
-                    <button class="lang-btn" id="langCurrent" onclick="toggleLangMenu()">
-                        <i class="fas fa-globe"></i> English <i class="fas fa-caret-down"></i>
-                    </button>
-                    <div class="lang-menu" id="langMenu">
-                        <a href="#" onclick="setLanguage('en');toggleLangMenu();return false;">English</a>
-                        <a href="#" onclick="setLanguage('zh');toggleLangMenu();return false;">中文</a>
-                        <a href="#" onclick="setLanguage('ar');toggleLangMenu();return false;">العربية</a>
-                        <a href="#" onclick="setLanguage('es');toggleLangMenu();return false;">Español</a>
-                        <a href="#" onclick="setLanguage('ru');toggleLangMenu();return false;">Русский</a>
-                        <a href="#" onclick="setLanguage('pt');toggleLangMenu();return false;">Português</a>
-                        <a href="#" onclick="setLanguage('fr');toggleLangMenu();return false;">Français</a>
-                        <a href="#" onclick="setLanguage('de');toggleLangMenu();return false;">Deutsch</a>
-                        <a href="#" onclick="setLanguage('ja');toggleLangMenu();return false;">日本語</a>
-                        <a href="#" onclick="setLanguage('ko');toggleLangMenu();return false;">한국어</a>
-                        <a href="#" onclick="setLanguage('hi');toggleLangMenu();return false;">हिन्दी</a>
-                        <a href="#" onclick="setLanguage('th');toggleLangMenu();return false;">ไทย</a>
-                    </div>
-                </div>
                 <div class="social-top">
                     <a href="https://www.facebook.com/profile.php?id=61585195565123" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
@@ -69,30 +50,12 @@
                 <a href="#contact" class="nav-link" data-i18n="contact">Contact</a>
             </nav>
             <div class="nav-actions">
-                <button class="btn-lang-mobile" onclick="toggleLangMenuMobile()" aria-label="Language">
-                    <i class="fas fa-globe"></i>
-                </button>
                 <button class="btn-search" onclick="toggleSearch()" aria-label="Search">
                     <i class="fas fa-search"></i>
                 </button>
                 <button class="btn-mobile-menu" onclick="toggleMobileMenu()" aria-label="Menu">
                     <i class="fas fa-bars"></i>
                 </button>
-            </div>
-            <!-- Mobile Language Menu -->
-            <div class="lang-menu-mobile" id="langMenuMobile">
-                <a href="#" onclick="setLanguage('en');toggleLangMenuMobile();return false;">English</a>
-                <a href="#" onclick="setLanguage('zh');toggleLangMenuMobile();return false;">中文</a>
-                <a href="#" onclick="setLanguage('ar');toggleLangMenuMobile();return false;">العربية</a>
-                <a href="#" onclick="setLanguage('es');toggleLangMenuMobile();return false;">Español</a>
-                <a href="#" onclick="setLanguage('ru');toggleLangMenuMobile();return false;">Русский</a>
-                <a href="#" onclick="setLanguage('pt');toggleLangMenuMobile();return false;">Português</a>
-                <a href="#" onclick="setLanguage('fr');toggleLangMenuMobile();return false;">Français</a>
-                <a href="#" onclick="setLanguage('de');toggleLangMenuMobile();return false;">Deutsch</a>
-                <a href="#" onclick="setLanguage('ja');toggleLangMenuMobile();return false;">日本語</a>
-                <a href="#" onclick="setLanguage('ko');toggleLangMenuMobile();return false;">한국어</a>
-                <a href="#" onclick="setLanguage('hi');toggleLangMenuMobile();return false;">हिन्दी</a>
-                <a href="#" onclick="setLanguage('th');toggleLangMenuMobile();return false;">ไทย</a>
             </div>
         </div>
         <!-- Search overlay -->
@@ -309,9 +272,6 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="data/content-data.js"></script>
-    <script src="js/i18n.js"></script>
-    <script src="js/content-loader.js"></script>
     <script src="js/main.js"></script>
     <script src="js/product-loader.js"></script>
 </body>
