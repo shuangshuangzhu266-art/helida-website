@@ -200,13 +200,8 @@
                             <button class="inquiry-remove" onclick="clearInquiry()" title="Remove">×</button>
                         </div>
                     </div>
-                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/2289894015@qq.com" method="POST" onsubmit="handleContactSubmit(event)">
-                        <input type="hidden" name="_subject" value="HELIDA Website - New Inquiry">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://www.helida-tools.com/#contact">
+                    <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event); return false;">
                         <input type="hidden" name="Product" id="inquiryProductField" value="">
-                        <input type="hidden" name="Name" value="Website Inquiry">
-                        <input type="hidden" name="Email" value="inquiry@helida-tools.com">
                         <div class="form-group">
                             <input type="tel" name="Phone" required data-i18n="contactFormPhone" placeholder="Your Phone / WhatsApp">
                         </div>
