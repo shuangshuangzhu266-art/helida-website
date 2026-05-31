@@ -81,7 +81,7 @@ window.DEFAULT_CONTENT = {
     ]
   },
   "about": {
-    "image": "images/8c5a721ac402b187a6657e89af2c5715.jpg",
+    "image": "images/factory.jpg",
     "title": {
       "en": "About HELIDA",
       "zh": "关于 HELIDA"
