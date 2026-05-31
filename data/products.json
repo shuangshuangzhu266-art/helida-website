@@ -8,36 +8,186 @@
       "desc_en": "Fast-cutting turbo diamond blades for tile, ceramic, porcelain.",
       "desc_zh": "快速切割涡轮金刚石锯片，适用于瓷砖、陶瓷、岩板。",
       "products": [
-        {"image": "images/turbo-blade-01.jpg", "name_en": "Super Spiral Turbo Blade", "name_zh": "超级螺旋涡轮片", "size": "4.5\" (115mm)"},
-        {"image": "images/turbo-blade-02.jpg", "name_en": "Tile & Ceramic Turbo Blade", "name_zh": "瓷砖陶瓷涡轮片", "size": "4\" - 14\""},
-        {"image": "images/turbo-blade-03.jpg", "name_en": "Porcelain Turbo Blade", "name_zh": "玻化砖涡轮片", "size": "4\" - 7\""},
-        {"image": "images/turbo-blade-04.jpg", "name_en": "X-Turbo Saw Blade", "name_zh": "X型涡轮锯片", "size": "4.5\" - 5\""},
-        {"image": "images/turbo-blade-05.jpg", "name_en": "Mesh Turbo Blade", "name_zh": "网纹涡轮片", "size": "4\" - 7\""},
-        {"image": "images/turbo-blade-06.jpg", "name_en": "Flower Turbo Saw Blade", "name_zh": "花形涡轮锯片", "size": "4.5\" - 5\""},
-        {"image": "images/turbo-blade-07.jpg", "name_en": "Hexagon Turbo Saw Blade", "name_zh": "六角涡轮锯片", "size": "4.5\" - 5\""},
-        {"image": "images/turbo-blade-08.jpg", "name_en": "Double Side X Turbo Blade", "name_zh": "双面X涡轮片", "size": "4.5\" (115mm)"},
-        {"image": "images/turbo-blade-09.jpg", "name_en": "Turbo Wave Diamond Blade", "name_zh": "涡轮波纹金刚石片", "size": "4\" - 6\""},
-        {"image": "images/turbo-blade-10.jpg", "name_en": "Continuous Rim Turbo Blade", "name_zh": "连续式涡轮片", "size": "4\" - 7\""},
-        {"image": "images/turbo-blade-11.jpg", "name_en": "Segmented Turbo Blade", "name_zh": "节块式涡轮片", "size": "4.5\" - 7\""},
-        {"image": "images/turbo-blade-12.jpg", "name_en": "Dekton Ultra Thin Turbo Blade", "name_zh": "岩板超薄涡轮片", "size": "4.5\" (115mm)"},
-        {"image": "images/turbo-blade-13.jpg", "name_en": "Wet Cut Turbo Blade", "name_zh": "湿切涡轮片", "size": "4\" - 7\""},
-        {"image": "images/turbo-blade-14.jpg", "name_en": "Dry Cut Turbo Blade", "name_zh": "干切涡轮片", "size": "4\" - 7\""},
-        {"image": "images/turbo-blade-15.jpg", "name_en": "Turbo Blade with Flange", "name_zh": "带法兰涡轮片", "size": "4.5\" - 5\""},
-        {"image": "images/turbo-blade-16.jpg", "name_en": "Thin Kerf Turbo Blade", "name_zh": "超薄涡轮片", "size": "4.5\" (115mm)"},
-        {"image": "images/turbo-blade-17.jpg", "name_en": "Marble Turbo Blade", "name_zh": "大理石涡轮片", "size": "4.5\" - 6\""},
-        {"image": "images/turbo-blade-18.jpg", "name_en": "Granite Turbo Blade", "name_zh": "花岗岩涡轮片", "size": "4.5\" - 7\""},
-        {"image": "images/turbo-blade-19.jpg", "name_en": "Universal Turbo Blade", "name_zh": "通用涡轮片", "size": "4\" - 5\""},
-        {"image": "images/turbo-blade-20.jpg", "name_en": "High Speed Turbo Blade", "name_zh": "高速涡轮片", "size": "4.5\" (115mm)"},
-        {"image": "images/turbo-blade-21.jpg", "name_en": "Noise Reduction Turbo Blade", "name_zh": "静音涡轮片", "size": "4.5\" - 5\""},
-        {"image": "images/turbo-blade-22.jpg", "name_en": "Reinforced Core Turbo Blade", "name_zh": "加强芯涡轮片", "size": "5\" - 7\""},
-        {"image": "images/turbo-blade-23.jpg", "name_en": "Ceramic Pro Turbo Blade", "name_zh": "专业陶瓷涡轮片", "size": "4\" - 5\""},
-        {"image": "images/turbo-blade-24.jpg", "name_en": "Sintered Stone Turbo Blade", "name_zh": "岩板烧结石涡轮片", "size": "4.5\" - 5\""},
-        {"image": "images/turbo-blade-25.jpg", "name_en": "Multi-Purpose Turbo Blade", "name_zh": "多功能涡轮片", "size": "4\" - 7\""},
-        {"image": "images/turbo-blade-26.jpg", "name_en": "Professional Turbo Blade", "name_zh": "专业级涡轮片", "size": "4\" - 9\""},
-        {"image": "images/turbo-blade-27.jpg", "name_en": "Turbo Cutting Disc", "name_zh": "涡轮切割片", "size": "4.5\" (115mm)"},
-        {"image": "images/turbo-blade-28.jpg", "name_en": "Turbo Diamond Saw", "name_zh": "涡轮金刚石锯", "size": "4.5\" - 5\""},
-        {"image": "images/turbo-blade-29.jpg", "name_en": "Precision Turbo Blade", "name_zh": "精密涡轮片", "size": "4\" - 6\""},
-        {"image": "images/turbo-blade-30.jpg", "name_en": "Turbo Cut-Off Blade", "name_zh": "涡轮切断片", "size": "4.5\" - 7\""}
+        {
+          "image": "images/turbo-blade-01.jpg",
+          "name_en": "Super Spiral Turbo Blade",
+          "name_zh": "超级螺旋涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-02.jpg",
+          "name_en": "Tile & Ceramic Turbo Blade",
+          "name_zh": "瓷砖陶瓷涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-03.jpg",
+          "name_en": "Porcelain Turbo Blade",
+          "name_zh": "玻化砖涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-04.jpg",
+          "name_en": "X-Turbo Saw Blade",
+          "name_zh": "X型涡轮锯片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-05.jpg",
+          "name_en": "Mesh Turbo Blade",
+          "name_zh": "网纹涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-06.jpg",
+          "name_en": "Flower Turbo Saw Blade",
+          "name_zh": "花形涡轮锯片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-07.jpg",
+          "name_en": "Hexagon Turbo Saw Blade",
+          "name_zh": "六角涡轮锯片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-08.jpg",
+          "name_en": "Double Side X Turbo Blade",
+          "name_zh": "双面X涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-09.jpg",
+          "name_en": "Turbo Wave Diamond Blade",
+          "name_zh": "涡轮波纹金刚石片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-10.jpg",
+          "name_en": "Continuous Rim Turbo Blade",
+          "name_zh": "连续式涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-11.jpg",
+          "name_en": "Segmented Turbo Blade",
+          "name_zh": "节块式涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-12.jpg",
+          "name_en": "Dekton Ultra Thin Turbo Blade",
+          "name_zh": "岩板超薄涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-13.jpg",
+          "name_en": "Wet Cut Turbo Blade",
+          "name_zh": "湿切涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-14.jpg",
+          "name_en": "Dry Cut Turbo Blade",
+          "name_zh": "干切涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-15.jpg",
+          "name_en": "Turbo Blade with Flange",
+          "name_zh": "带法兰涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-16.jpg",
+          "name_en": "Thin Kerf Turbo Blade",
+          "name_zh": "超薄涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-17.jpg",
+          "name_en": "Marble Turbo Blade",
+          "name_zh": "大理石涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-18.jpg",
+          "name_en": "Granite Turbo Blade",
+          "name_zh": "花岗岩涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-19.jpg",
+          "name_en": "Universal Turbo Blade",
+          "name_zh": "通用涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-20.jpg",
+          "name_en": "High Speed Turbo Blade",
+          "name_zh": "高速涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-21.jpg",
+          "name_en": "Noise Reduction Turbo Blade",
+          "name_zh": "静音涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-22.jpg",
+          "name_en": "Reinforced Core Turbo Blade",
+          "name_zh": "加强芯涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-23.jpg",
+          "name_en": "Ceramic Pro Turbo Blade",
+          "name_zh": "专业陶瓷涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-24.jpg",
+          "name_en": "Sintered Stone Turbo Blade",
+          "name_zh": "岩板烧结石涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-25.jpg",
+          "name_en": "Multi-Purpose Turbo Blade",
+          "name_zh": "多功能涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-26.jpg",
+          "name_en": "Professional Turbo Blade",
+          "name_zh": "专业级涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-27.jpg",
+          "name_en": "Turbo Cutting Disc",
+          "name_zh": "涡轮切割片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-28.jpg",
+          "name_en": "Turbo Diamond Saw",
+          "name_zh": "涡轮金刚石锯",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-29.jpg",
+          "name_en": "Precision Turbo Blade",
+          "name_zh": "精密涡轮片",
+          "size": "4\"-9\""
+        },
+        {
+          "image": "images/turbo-blade-30.jpg",
+          "name_en": "Turbo Cut-Off Blade",
+          "name_zh": "涡轮切断片",
+          "size": "4\"-9\""
+        }
       ]
     },
     {
@@ -48,26 +198,126 @@
       "desc_en": "Diamond saw blades for granite, marble, quartz, and natural stone.",
       "desc_zh": "金刚石锯片，适用于花岗岩、大理石、石英石及天然石材。",
       "products": [
-        {"image": "images/stone-blade-01.jpg", "name_en": "Granite Saw Blade", "name_zh": "花岗岩锯片", "size": "4\" - 36\""},
-        {"image": "images/stone-blade-02.jpg", "name_en": "Marble Saw Blade", "name_zh": "大理石锯片", "size": "4\" - 24\""},
-        {"image": "images/stone-blade-03.jpg", "name_en": "Quartz & Engineered Stone Blade", "name_zh": "石英石人造石锯片", "size": "4\" - 16\""},
-        {"image": "images/stone-blade-04.jpg", "name_en": "Segmented Granite Blade", "name_zh": "节块式花岗岩锯片", "size": "12\" - 36\""},
-        {"image": "images/stone-blade-05.jpg", "name_en": "Continuous Rim Marble Blade", "name_zh": "连续式大理石锯片", "size": "4\" - 14\""},
-        {"image": "images/stone-blade-06.jpg", "name_en": "Turbo Stone Blade", "name_zh": "涡轮石材锯片", "size": "4.5\" - 7\""},
-        {"image": "images/stone-blade-07.jpg", "name_en": "Large Diameter Granite Blade", "name_zh": "大直径花岗岩锯片", "size": "24\" - 48\""},
-        {"image": "images/stone-blade-08.jpg", "name_en": "Bridge Saw Blade", "name_zh": "桥切机锯片", "size": "14\" - 24\""},
-        {"image": "images/stone-blade-09.jpg", "name_en": "Stone Cutting Disc", "name_zh": "石材切割片", "size": "4\" - 9\""},
-        {"image": "images/stone-blade-10.jpg", "name_en": "Granite Profile Blade", "name_zh": "花岗岩异形片", "size": "5\" - 8\""},
-        {"image": "images/stone-blade-11.jpg", "name_en": "Marble Finishing Blade", "name_zh": "大理石精修片", "size": "4\" - 7\""},
-        {"image": "images/stone-blade-12.jpg", "name_en": "Diamond Stone Cutting Blade", "name_zh": "金刚石石材切割片", "size": "4.5\" - 14\""},
-        {"image": "images/stone-blade-13.jpg", "name_en": "Stone Slab Cutting Blade", "name_zh": "石板切割片", "size": "14\" - 36\""},
-        {"image": "images/stone-blade-14.jpg", "name_en": "Precision Stone Saw", "name_zh": "精密石材锯", "size": "7\" - 14\""},
-        {"image": "images/stone-blade-15.jpg", "name_en": "Stone Edge Profiling Blade", "name_zh": "石材边型片", "size": "6\" - 8\""},
-        {"image": "images/stone-blade-16.jpg", "name_en": "Diamond Circular Stone Saw", "name_zh": "金刚石圆锯片", "size": "12\" - 24\""},
-        {"image": "images/stone-blade-17.jpg", "name_en": "Stone Block Cutting Blade", "name_zh": "荒料切割片", "size": "24\" - 48\""},
-        {"image": "images/stone-blade-18.jpg", "name_en": "Thin Stone Veneer Blade", "name_zh": "薄石贴面片", "size": "4.5\" - 7\""},
-        {"image": "images/stone-blade-19.jpg", "name_en": "CNC Stone Cutting Blade", "name_zh": "数控石材切割片", "size": "4\" - 10\""},
-        {"image": "images/stone-blade-20.jpg", "name_en": "Stone Masonry Blade", "name_zh": "石工切割片", "size": "6\" - 16\""}
+        {
+          "image": "images/stone-blade-01.jpg",
+          "name_en": "Granite Saw Blade",
+          "name_zh": "花岗岩锯片",
+          "size": "250mm"
+        },
+        {
+          "image": "images/stone-blade-02.jpg",
+          "name_en": "Marble Saw Blade",
+          "name_zh": "大理石锯片",
+          "size": "230mm"
+        },
+        {
+          "image": "images/stone-blade-03.jpg",
+          "name_en": "Quartz & Engineered Stone Blade",
+          "name_zh": "石英石人造石锯片",
+          "size": "180mm"
+        },
+        {
+          "image": "images/stone-blade-04.jpg",
+          "name_en": "Segmented Granite Blade",
+          "name_zh": "节块式花岗岩锯片",
+          "size": "195mm"
+        },
+        {
+          "image": "images/stone-blade-05.jpg",
+          "name_en": "Continuous Rim Marble Blade",
+          "name_zh": "连续式大理石锯片",
+          "size": "230mm"
+        },
+        {
+          "image": "images/stone-blade-06.jpg",
+          "name_en": "Turbo Stone Blade",
+          "name_zh": "涡轮石材锯片",
+          "size": "114mm"
+        },
+        {
+          "image": "images/stone-blade-07.jpg",
+          "name_en": "Large Diameter Granite Blade",
+          "name_zh": "大直径花岗岩锯片",
+          "size": "114mm"
+        },
+        {
+          "image": "images/stone-blade-08.jpg",
+          "name_en": "Bridge Saw Blade",
+          "name_zh": "桥切机锯片",
+          "size": "125mm/180mm"
+        },
+        {
+          "image": "images/stone-blade-09.jpg",
+          "name_en": "Stone Cutting Disc",
+          "name_zh": "石材切割片",
+          "size": "114mm/125mm/180mm"
+        },
+        {
+          "image": "images/stone-blade-10.jpg",
+          "name_en": "Granite Profile Blade",
+          "name_zh": "花岗岩异形片",
+          "size": "110mm-180mm"
+        },
+        {
+          "image": "images/stone-blade-11.jpg",
+          "name_en": "Marble Finishing Blade",
+          "name_zh": "大理石精修片",
+          "size": "130mm"
+        },
+        {
+          "image": "images/stone-blade-12.jpg",
+          "name_en": "Diamond Stone Cutting Blade",
+          "name_zh": "金刚石石材切割片",
+          "size": "114mm"
+        },
+        {
+          "image": "images/stone-blade-13.jpg",
+          "name_en": "Stone Slab Cutting Blade",
+          "name_zh": "石板切割片",
+          "size": "114mm/125mm"
+        },
+        {
+          "image": "images/stone-blade-14.jpg",
+          "name_en": "Precision Stone Saw",
+          "name_zh": "精密石材锯片",
+          "size": "114mm"
+        },
+        {
+          "image": "images/stone-blade-15.jpg",
+          "name_en": "Stone Edge Profiling Blade",
+          "name_zh": "石材边型片",
+          "size": "230mm"
+        },
+        {
+          "image": "images/stone-blade-16.jpg",
+          "name_en": "Diamond Circular Stone Saw",
+          "name_zh": "金刚石圆锯片",
+          "size": "125mm"
+        },
+        {
+          "image": "images/stone-blade-17.jpg",
+          "name_en": "Stone Block Cutting Blade",
+          "name_zh": "荒料切割片",
+          "size": "125mm"
+        },
+        {
+          "image": "images/stone-blade-18.jpg",
+          "name_en": "Thin Stone Veneer Blade",
+          "name_zh": "薄石贴面片",
+          "size": "114mm"
+        },
+        {
+          "image": "images/stone-blade-19.jpg",
+          "name_en": "CNC Stone Cutting Blade",
+          "name_zh": "数控石材切割片",
+          "size": "125mm"
+        },
+        {
+          "image": "images/stone-blade-20.jpg",
+          "name_en": "Stone Masonry Blade",
+          "name_zh": "石工切割片",
+          "size": "126mm"
+        }
       ]
     },
     {
@@ -78,18 +328,72 @@
       "desc_en": "Heavy-duty diamond blades for concrete, asphalt, brick, and construction.",
       "desc_zh": "重型金刚石锯片，适用于混凝土、沥青、砖块及建筑施工。",
       "products": [
-        {"image": "images/concrete-blade-01.jpg", "name_en": "Concrete Cutting Blade", "name_zh": "混凝土切割片", "size": "12\" - 48\""},
-        {"image": "images/concrete-blade-02.jpg", "name_en": "Reinforced Concrete Blade", "name_zh": "钢筋混凝土切割片", "size": "12\" - 36\""},
-        {"image": "images/concrete-blade-03.jpg", "name_en": "Asphalt Cutting Blade", "name_zh": "沥青切割片", "size": "12\" - 36\""},
-        {"image": "images/concrete-blade-04.jpg", "name_en": "General Construction Blade", "name_zh": "通用建筑切割片", "size": "4\" - 14\""},
-        {"image": "images/concrete-blade-05.jpg", "name_en": "Brick & Block Cutting Blade", "name_zh": "砖块切割片", "size": "12\" - 20\""},
-        {"image": "images/concrete-blade-06.jpg", "name_en": "Green Concrete Blade", "name_zh": "新混凝土切割片", "size": "12\" - 36\""},
-        {"image": "images/concrete-blade-07.jpg", "name_en": "Road Saw Blade", "name_zh": "路面切割片", "size": "18\" - 48\""},
-
-        {"image": "images/concrete-blade-09.jpg", "name_en": "Floor Saw Blade", "name_zh": "地坪切割片", "size": "14\" - 30\""},
-        {"image": "images/concrete-blade-10.jpg", "name_en": "Diamond Construction Blade", "name_zh": "金刚石建筑切割片", "size": "4.5\" - 14\""},
-        {"image": "images/concrete-blade-11.jpg", "name_en": "Multi-Purpose Construction Blade", "name_zh": "多用途建筑切割片", "size": "5\" - 12\""},
-        {"image": "", "name_en": "+ More Models", "name_zh": "+ 更多型号", "size": "More specifications available"}
+        {
+          "image": "images/concrete-blade-01.jpg",
+          "name_en": "Concrete Cutting Blade",
+          "name_zh": "混凝土切割片",
+          "size": "410mm/520mm/620mm"
+        },
+        {
+          "image": "images/concrete-blade-02.jpg",
+          "name_en": "Reinforced Concrete Blade",
+          "name_zh": "钢筋混凝土切割片",
+          "size": "410mm/520mm/620mm"
+        },
+        {
+          "image": "images/concrete-blade-03.jpg",
+          "name_en": "Asphalt Cutting Blade",
+          "name_zh": "沥青切割片",
+          "size": "410mm/520mm/620mm"
+        },
+        {
+          "image": "images/concrete-blade-04.jpg",
+          "name_en": "General Construction Blade",
+          "name_zh": "通用建筑切割片",
+          "size": "410mm/520mm/620mm"
+        },
+        {
+          "image": "images/concrete-blade-05.jpg",
+          "name_en": "Brick & Block Cutting Blade",
+          "name_zh": "砖块切割片",
+          "size": "350mm/410mm/520mm/620mm"
+        },
+        {
+          "image": "images/concrete-blade-06.jpg",
+          "name_en": "Green Concrete Blade",
+          "name_zh": "新混凝土切割片",
+          "size": "410mm/520mm/620mm"
+        },
+        {
+          "image": "images/concrete-blade-07.jpg",
+          "name_en": "Road Saw Blade",
+          "name_zh": "路面切割片",
+          "size": "410mm/520mm/620mm"
+        },
+        {
+          "image": "images/concrete-blade-09.jpg",
+          "name_en": "Floor Saw Blade",
+          "name_zh": "地坪切割片",
+          "size": "410mm/520mm/620mm"
+        },
+        {
+          "image": "images/concrete-blade-10.jpg",
+          "name_en": "Diamond Construction Blade",
+          "name_zh": "金刚石建筑切割片",
+          "size": "410mm/520mm/620mm"
+        },
+        {
+          "image": "images/concrete-blade-11.jpg",
+          "name_en": "Multi-Purpose Construction Blade",
+          "name_zh": "多用途建筑切割片",
+          "size": "410mm/520mm/620mm"
+        },
+        {
+          "image": "",
+          "name_en": "+ More Models",
+          "name_zh": "+ 更多型号",
+          "size": "More specifications available"
+        }
       ]
     },
     {
@@ -100,11 +404,36 @@
       "desc_en": "Diamond grinding cup wheels and polishing pads for surface finishing.",
       "desc_zh": "金刚石磨杯轮和抛光垫，用于表面处理和精加工。",
       "products": [
-        {"image": "images/grinding-01.jpg", "name_en": "Diamond Grinding Cup Wheel", "name_zh": "金刚石磨杯轮", "size": "4\" - 7\""},
-        {"image": "images/grinding-02.jpg", "name_en": "Diamond Polishing Pad", "name_zh": "金刚石抛光垫", "size": "3\" - 7\""},
-        {"image": "images/grinding-03.jpg", "name_en": "Turbo Grinding Cup Wheel", "name_zh": "涡轮磨杯轮", "size": "4\" - 7\""},
-        {"image": "images/grinding-04.jpg", "name_en": "Wet Polishing Pad Set", "name_zh": "湿抛光盘套装", "size": "3\" - 7\""},
-        {"image": "images/grinding-05.jpg", "name_en": "Concrete Grinding Disc", "name_zh": "混凝土磨片", "size": "4\" - 5\""}
+        {
+          "image": "images/grinding-01.jpg",
+          "name_en": "Diamond Grinding Cup Wheel",
+          "name_zh": "金刚石磨杯轮",
+          "size": "4\" - 7\""
+        },
+        {
+          "image": "images/grinding-02.jpg",
+          "name_en": "Diamond Polishing Pad",
+          "name_zh": "金刚石抛光垫",
+          "size": "3\" - 7\""
+        },
+        {
+          "image": "images/grinding-03.jpg",
+          "name_en": "Turbo Grinding Cup Wheel",
+          "name_zh": "涡轮磨杯轮",
+          "size": "4\" - 7\""
+        },
+        {
+          "image": "images/grinding-04.jpg",
+          "name_en": "Wet Polishing Pad Set",
+          "name_zh": "湿抛光盘套装",
+          "size": "3\" - 7\""
+        },
+        {
+          "image": "images/grinding-05.jpg",
+          "name_en": "Concrete Grinding Disc",
+          "name_zh": "混凝土磨片",
+          "size": "4\" - 5\""
+        }
       ]
     }
   ]
