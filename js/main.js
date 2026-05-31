@@ -198,12 +198,6 @@ function handleContactSubmit(event) {
         console.error('PushPlus error:', err);
     });
 
-    // Let form submit to formsubmit.co naturally after preventing default above
-    // Use a tiny delay so PushPlus fires first
-    setTimeout(function() {
-        form.submit();
-    }, 500);
-
     // Reset form after delay
     setTimeout(function() {
         form.style.display = '';
