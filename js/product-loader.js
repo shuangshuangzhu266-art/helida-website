@@ -29,7 +29,7 @@ function renderProductCategories(categories) {
 
         // Category header - clickable to expand/collapse
         catEl.innerHTML = `
-            <div class="product-cat-header" onclick="toggleCategory(this)" style="cursor:pointer;">
+            <div class="product-cat-header" onclick="toggleCategory(this,event)" style="cursor:pointer;">
                 <div class="product-cat-icon"><i class="fas ${cat.icon || 'fa-circle'}"></i></div>
                 <div class="product-cat-info">
                     <h3>${cat.title_en}</h3>
@@ -59,21 +59,25 @@ function renderProductCategories(categories) {
 }
 
 // Toggle category expand/collapse
-function toggleCategory(header) {
+function toggleCategory(header, event) {
+    if (event) { event.preventDefault(); event.stopPropagation(); }
     const body = header.nextElementSibling;
     const toggle = header.querySelector('.cat-toggle');
     if (!body) return;
 
-    if (body.style.display === 'none') {
-        // Collapse all others first
-        document.querySelectorAll('.cat-body').forEach(b => b.style.display = 'none');
-        document.querySelectorAll('.cat-toggle').forEach(t => t.textContent = '▼');
-        // Expand this one
+    const wasHidden = body.style.display === 'none';
+
+    // Collapse all
+    document.querySelectorAll('.cat-body').forEach(b => b.style.display = 'none');
+    document.querySelectorAll('.cat-toggle').forEach(t => t.textContent = '▼');
+
+    if (wasHidden) {
+        // Remember scroll position
+        const scrollY = window.scrollY;
         body.style.display = 'grid';
         toggle.textContent = '▲';
-    } else {
-        body.style.display = 'none';
-        toggle.textContent = '▼';
+        // Restore scroll position to avoid jump
+        requestAnimationFrame(() => window.scrollTo({ top: scrollY, behavior: 'instant' }));
     }
 }
 
