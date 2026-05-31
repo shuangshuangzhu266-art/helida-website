@@ -1,357 +1,586 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sina Steel - Premium Stainless Steel Solutions</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <meta name="description" content="HELIDA Tools - Professional Diamond Tools Manufacturer">
+    <title>HELIDA Tools - Professional Diamond Tools Manufacturer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 </head>
-<body class="dark-mode">
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2><a href="index.html">Sina Steel</a></h2>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link active" data-en="Home" data-ar="الرئيسية">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="products.html" class="nav-link" data-en="Products" data-ar="المنتجات">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a href="projects.html" class="nav-link" data-en="Projects" data-ar="المشاريع">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="services.html" class="nav-link" data-en="Services" data-ar="الخدمات">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link" data-en="About" data-ar="من نحن">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link" data-en="Contact" data-ar="اتصل بنا">Contact</a>
-                </li>
-            </ul>
-            <div class="nav-controls">
-                <div class="language-selector">
-                    <button class="lang-btn active" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="ar">عربي</button>
-                    
-                </div>
-                <button class="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </div>
-    </nav>
+<body>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-video">
-            <video autoplay muted loop>
-                <source src="assets/videos/sinasteel_intro_vid.mp4" type="video/mp4">
-            </video>
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <h1 class="hero-title" data-en="Premium Stainless Steel Solutions" data-ar="حلول الفولاذ المقاوم للصدأ المتميزة">
-                Premium Stainless Steel Solutions
-            </h1>
-            <p class="hero-subtitle" data-en="Over 5 years of excellence in the Egyptian market" data-ar="أكثر من 5 سنوات من التميز في السوق المصري">
-                Over 5 years of excellence in the Egyptian market
-            </p>
-            <button class="cta-button pulse-animation" data-en="Get Quote" data-ar="احصل على عرض سعر">
-                Get Quote
-            </button>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience">
+    <!-- ===== Top Bar ===== -->
+    <div class="top-bar">
         <div class="container">
-            <div class="experience-content">
-                <div class="experience-counter">
-                    <div class="counter" data-target="5">0</div>
-                    <span class="counter-text" data-en="+ Years" data-ar="+ سنوات">+ Years</span>
+            <div class="top-bar-left">
+                <span><i class="fas fa-envelope"></i> 2289894015@qq.com</span>
+                <span><i class="fas fa-phone"></i> 16630152768</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="langCurrent" onclick="toggleLangMenu()">
+                        <i class="fas fa-globe"></i> English <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="lang-menu" id="langMenu">
+                        <a href="#" onclick="setLanguage('en');toggleLangMenu();return false;">English</a>
+                        <a href="#" onclick="setLanguage('zh');toggleLangMenu();return false;">中文</a>
+                        <a href="#" onclick="setLanguage('ar');toggleLangMenu();return false;">العربية</a>
+                        <a href="#" onclick="setLanguage('es');toggleLangMenu();return false;">Español</a>
+                        <a href="#" onclick="setLanguage('ru');toggleLangMenu();return false;">Русский</a>
+                        <a href="#" onclick="setLanguage('pt');toggleLangMenu();return false;">Português</a>
+                        <a href="#" onclick="setLanguage('fr');toggleLangMenu();return false;">Français</a>
+                        <a href="#" onclick="setLanguage('de');toggleLangMenu();return false;">Deutsch</a>
+                        <a href="#" onclick="setLanguage('ja');toggleLangMenu();return false;">日本語</a>
+                        <a href="#" onclick="setLanguage('ko');toggleLangMenu();return false;">한국어</a>
+                        <a href="#" onclick="setLanguage('hi');toggleLangMenu();return false;">हिन्दी</a>
+                        <a href="#" onclick="setLanguage('th');toggleLangMenu();return false;">ไทย</a>
+                    </div>
                 </div>
-                <div class="experience-text">
-                    <p data-en="With over 5 years of experience in the Egyptian market, Sina Steel has become a trusted supplier in the stainless steel sector, offering integrated supply solutions for the food, pharmaceutical, and various industrial sectors." data-ar="مع أكثر من 5 سنوات من الخبرة في السوق المصري، أصبحت سينا ستيل مورداً موثوقاً في قطاع الفولاذ المقاوم للصدأ، حيث تقدم حلول إمداد متكاملة لقطاعات الأغذية والأدوية والصناعات المختلفة.">
-                        With over 5 years of experience in the Egyptian market, Sina Steel has become a trusted supplier in the stainless steel sector, offering integrated supply solutions for the food, pharmaceutical, and various industrial sectors.
-                    </p>
+                <div class="social-top">
+                    <a href="https://www.facebook.com/profile.php?id=61585195565123" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/yuanqiucui1/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Manufacturing Process Section -->
-    <section class="manufacturing">
-        <div class="container">
-            <h2 class="section-title" data-en="Our Manufacturing Process" data-ar="عملية التصنيع لدينا">Our Manufacturing Process</h2>
-            <div class="process-slider">
-                <div class="slider-container">
-                    <div class="slider-track">
-                        <div class="slide active">
-                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop" alt="Manufacturing Process">
-                            <div class="slide-content">
-                                <h3 data-en="Quality Control" data-ar="مراقبة الجودة">Quality Control</h3>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop" alt="Manufacturing Process">
-                            <div class="slide-content">
-                                <h3 data-en="Precision Cutting" data-ar="القطع الدقيق">Precision Cutting</h3>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop" alt="Manufacturing Process">
-                            <div class="slide-content">
-                                <h3 data-en="Final Inspection" data-ar="الفحص النهائي">Final Inspection</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Products Section -->
-    <section id="products" class="featured-products">
-        <div class="container">
-            <h2 class="section-title" data-en="Featured Products" data-ar="المنتجات المميزة">Featured Products</h2>
-            <div class="products-grid">
-                <div class="product-card" data-product="sheets">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Stainless Steel Sheets">
-                        <div class="product-overlay">
-                            <h3 data-en="Stainless Steel Sheets" data-ar="ألواح الفولاذ المقاوم للصدأ">Stainless Steel Sheets</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card" data-product="coils">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Stainless Steel Coils">
-                        <div class="product-overlay">
-                            <h3 data-en="Stainless Steel Coils" data-ar="لفائف الفولاذ المقاوم للصدأ">Stainless Steel Coils</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card" data-product="angles">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Stainless Steel Angles">
-                        <div class="product-overlay">
-                            <h3 data-en="Stainless Steel Angles" data-ar="زوايا الفولاذ المقاوم للصدأ">Stainless Steel Angles</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card" data-product="flats">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Stainless Steel Flats">
-                        <div class="product-overlay">
-                            <h3 data-en="Stainless Steel Flats" data-ar="مسطحات الفولاذ المقاوم للصدأ">Stainless Steel Flats</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card" data-product="pipes">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Stainless Steel Pipes">
-                        <div class="product-overlay">
-                            <h3 data-en="Stainless Steel Pipes" data-ar="أنابيب الفولاذ المقاوم للصدأ">Stainless Steel Pipes</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card" data-product="bars">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Stainless Steel Bars">
-                        <div class="product-overlay">
-                            <h3 data-en="Stainless Steel Bars" data-ar="قضبان الفولاذ المقاوم للصدأ">Stainless Steel Bars</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title" data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-industry"></i>
-                    </div>
-                    <h3 data-en="Manufacturing" data-ar="التصنيع">Manufacturing</h3>
-                    <p data-en="Custom stainless steel manufacturing solutions" data-ar="حلول تصنيع الفولاذ المقاوم للصدأ المخصصة">Custom stainless steel manufacturing solutions</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <h3 data-en="Supply Chain" data-ar="سلسلة التوريد">Supply Chain</h3>
-                    <p data-en="Reliable supply chain management" data-ar="إدارة سلسلة التوريد الموثوقة">Reliable supply chain management</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 data-en="Quality Assurance" data-ar="ضمان الجودة">Quality Assurance</h3>
-                    <p data-en="International standards compliance" data-ar="الامتثال للمعايير الدولية">International standards compliance</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3 data-en="Support" data-ar="الدعم">Support</h3>
-                    <p data-en="24/7 customer support" data-ar="دعم العملاء على مدار الساعة">24/7 customer support</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title" data-en="Client Testimonials" data-ar="شهادات العملاء">Client Testimonials</h2>
-            <div class="testimonials-slider">
-                <div class="testimonial-card active">
-                    <div class="testimonial-content">
-                        <p data-en="Sina Steel has been our trusted partner for over 3 years. Their quality and service are exceptional." data-ar="سينا ستيل شريكنا الموثوق لأكثر من 3 سنوات. جودتهم وخدمتهم استثنائية.">Sina Steel has been our trusted partner for over 3 years. Their quality and service are exceptional.</p>
-                        <div class="testimonial-author">
-                            <h4>Ahmed Hassan</h4>
-                            <span data-en="Food Industry" data-ar="صناعة الأغذية">Food Industry</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p data-en="Outstanding quality and timely delivery. Highly recommended for pharmaceutical applications." data-ar="جودة متميزة وتسليم في الوقت المحدد. موصى به بشدة للتطبيقات الصيدلانية.">Outstanding quality and timely delivery. Highly recommended for pharmaceutical applications.</p>
-                        <div class="testimonial-author">
-                            <h4>Dr. Sarah Mohamed</h4>
-                            <span data-en="Pharmaceutical Industry" data-ar="الصناعة الصيدلانية">Pharmaceutical Industry</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Snippets Section -->
-    <section class="blog-snippets">
-        <div class="container">
-            <h2 class="section-title" data-en="Latest News" data-ar="أحدث الأخبار">Latest News</h2>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop" alt="Blog Post">
-                    </div>
-                    <div class="blog-content">
-                        <h3 data-en="Stainless Steel in Food Industry" data-ar="الفولاذ المقاوم للصدأ في صناعة الأغذية">Stainless Steel in Food Industry</h3>
-                        <p data-en="Learn about the importance of food-grade stainless steel..." data-ar="تعرف على أهمية الفولاذ المقاوم للصدأ الصالح للأغذية...">Learn about the importance of food-grade stainless steel...</p>
-                        <a href="#" class="read-more" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
-                    </div>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop" alt="Blog Post">
-                    </div>
-                    <div class="blog-content">
-                        <h3 data-en="Quality Standards Update" data-ar="تحديث معايير الجودة">Quality Standards Update</h3>
-                        <p data-en="Latest updates on international quality standards..." data-ar="أحدث التحديثات حول معايير الجودة الدولية...">Latest updates on international quality standards...</p>
-                        <a href="#" class="read-more" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quick Contact Section -->
-    <section class="quick-contact">
-        <div class="container">
-            <h2 class="section-title" data-en="Quick Contact" data-ar="اتصل بنا سريعاً">Quick Contact</h2>
-            <div class="contact-info">
-                <div class="working-hours">
-                    <h3 data-en="Working Hours" data-ar="ساعات العمل">Working Hours</h3>
-                    <table>
-                        <tr>
-                            <td data-en="Saturday - Thursday" data-ar="السبت - الخميس">Saturday - Thursday</td>
-                            <td>9:00 AM - 5:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td data-en="Friday" data-ar="الجمعة">Friday</td>
-                            <td data-en="Closed" data-ar="مغلق">Closed</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="address">
-                    <h3 data-en="Address" data-ar="العنوان">Address</h3>
-                    <p>Qalyub - Awal El-Bati</p>
-                    <a href="https://maps.google.com" target="_blank" class="map-link" data-en="View on Map" data-ar="عرض على الخريطة">View on Map</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WhatsApp Button -->
-    <div class="whatsapp-button">
-        <a href="https://wa.me/201067902515" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-            <span data-en="Contact Us Now" data-ar="اتصل بنا الآن">Contact Us Now</span>
-        </a>
     </div>
 
-    <!-- Footer -->
+    <!-- ===== Header / Navigation ===== -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="HELIDA Tools" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-name">HELIDA</span>
+                    <span class="logo-sub">Diamond Tools</span>
+                </div>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link active" data-i18n="home">Home</a>
+                <a href="#about" class="nav-link" data-i18n="about">About Us</a>
+                <a href="#products" class="nav-link" data-i18n="products">Products</a>
+                <a href="#certificates" class="nav-link" data-i18n="certificates">Certificates</a>
+                <a href="#download" class="nav-link" data-i18n="download">Download</a>
+                <a href="#contact" class="nav-link" data-i18n="contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn-lang-mobile" onclick="toggleLangMenuMobile()" aria-label="Language">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <button class="btn-search" onclick="toggleSearch()" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn-mobile-menu" onclick="toggleMobileMenu()" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- Mobile Language Menu -->
+            <div class="lang-menu-mobile" id="langMenuMobile">
+                <a href="#" onclick="setLanguage('en');toggleLangMenuMobile();return false;">English</a>
+                <a href="#" onclick="setLanguage('zh');toggleLangMenuMobile();return false;">中文</a>
+                <a href="#" onclick="setLanguage('ar');toggleLangMenuMobile();return false;">العربية</a>
+                <a href="#" onclick="setLanguage('es');toggleLangMenuMobile();return false;">Español</a>
+                <a href="#" onclick="setLanguage('ru');toggleLangMenuMobile();return false;">Русский</a>
+                <a href="#" onclick="setLanguage('pt');toggleLangMenuMobile();return false;">Português</a>
+                <a href="#" onclick="setLanguage('fr');toggleLangMenuMobile();return false;">Français</a>
+                <a href="#" onclick="setLanguage('de');toggleLangMenuMobile();return false;">Deutsch</a>
+                <a href="#" onclick="setLanguage('ja');toggleLangMenuMobile();return false;">日本語</a>
+                <a href="#" onclick="setLanguage('ko');toggleLangMenuMobile();return false;">한국어</a>
+                <a href="#" onclick="setLanguage('hi');toggleLangMenuMobile();return false;">हिन्दी</a>
+                <a href="#" onclick="setLanguage('th');toggleLangMenuMobile();return false;">ไทย</a>
+            </div>
+        </div>
+        <!-- Search overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-box">
+                <input type="text" data-i18n="search" placeholder="Search..." class="search-input" id="searchInput">
+                <button class="search-close" onclick="toggleSearch()"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== Hero Banner Slider ===== -->
+    <section class="hero" id="home">
+        <div class="slider" id="heroSlider">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <div class="slide-bg" style="background: linear-gradient(135deg, rgba(10,22,40,0.7) 0%, rgba(26,58,92,0.6) 50%, rgba(13,33,55,0.7) 100%), url('images/banner-slide1.jpg') center/cover no-repeat;"></div>
+                <div class="slide-particles" id="particles1"></div>
+                <div class="slide-content container">
+                    <div class="slide-text">
+                        <span class="slide-tag">HELIDA Tools</span>
+                        <h1 data-i18n="heroTitle1">Professional Diamond Tools Manufacturer</h1>
+                        <p data-i18n="heroDesc1">Over 20 years of experience in diamond tool manufacturing, ISO9001 certified, exported to 50+ countries worldwide.</p>
+                        <div class="slide-btns">
+                            <a href="#products" class="btn btn-primary" data-i18n="products">Products</a>
+                            <a href="#contact" class="btn btn-outline" data-i18n="contactUs">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="slide-image">
+                        <div class="hero-product-showcase">
+                            <div class="hero-blade hero-blade-1"><i class="fas fa-circle-notch"></i></div>
+                            <div class="hero-blade hero-blade-2"><i class="fas fa-circle"></i></div>
+                            <div class="hero-blade hero-blade-3"><i class="fas fa-dharmachakra"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="slide-bg" style="background: linear-gradient(135deg, rgba(15,32,39,0.65) 0%, rgba(32,58,67,0.55) 50%, rgba(44,83,100,0.65) 100%), url('images/banner-slide2.jpg') center/cover no-repeat;"></div>
+                <div class="slide-particles" id="particles2"></div>
+                <div class="slide-content container">
+                    <div class="slide-text">
+                        <span class="slide-tag">Premium Quality</span>
+                        <h1 data-i18n="heroTitle2">High Quality Saw Blades & Grinding Wheels</h1>
+                        <p data-i18n="heroDesc2">Premium quality diamond tools for stone, ceramic, concrete, granite, and marble processing. Trusted by professionals worldwide.</p>
+                        <div class="slide-btns">
+                            <a href="#products" class="btn btn-primary" data-i18n="viewAll">View All</a>
+                            <a href="#about" class="btn btn-outline" data-i18n="about">About Us</a>
+                        </div>
+                    </div>
+                    <div class="slide-image">
+                        <div class="hero-product-showcase">
+                            <div class="hero-blade hero-blade-1"><i class="fas fa-circle-notch"></i></div>
+                            <div class="hero-blade hero-blade-2"><i class="fas fa-circle"></i></div>
+                            <div class="hero-blade hero-blade-3"><i class="fas fa-dharmachakra"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="slide-bg" style="background: linear-gradient(135deg, rgba(26,26,46,0.65) 0%, rgba(22,33,62,0.55) 50%, rgba(15,52,96,0.65) 100%), url('images/banner-slide3.jpg') center/cover no-repeat;"></div>
+                <div class="slide-particles" id="particles3"></div>
+                <div class="slide-content container">
+                    <div class="slide-text">
+                        <span class="slide-tag">Innovation</span>
+                        <h1 data-i18n="heroTitle3">Precision Cutting Solutions for Stone & Tile</h1>
+                        <p data-i18n="heroDesc3">Advanced automatic production lines and strict quality inspection ensure every product meets the highest industry standards.</p>
+                        <div class="slide-btns">
+                            <a href="#download" class="btn btn-primary" data-i18n="download">Download</a>
+                            <a href="#contact" class="btn btn-outline" data-i18n="sendMessage">Send Message</a>
+                        </div>
+                    </div>
+                    <div class="slide-image">
+                        <div class="hero-product-showcase">
+                            <div class="hero-blade hero-blade-1"><i class="fas fa-circle-notch"></i></div>
+                            <div class="hero-blade hero-blade-2"><i class="fas fa-circle"></i></div>
+                            <div class="hero-blade hero-blade-3"><i class="fas fa-dharmachakra"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider Controls -->
+        <button class="slider-arrow slider-prev" onclick="changeSlide(-1)" aria-label="Previous">&#10094;</button>
+        <button class="slider-arrow slider-next" onclick="changeSlide(1)" aria-label="Next">&#10095;</button>
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="about">About Us</span>
+                <h2 class="section-title" data-i18n="aboutTitle">About HELIDA</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-placeholder" style="background: url('images/8c5a721ac402b187a6657e89af2c5715.jpg') center/cover no-repeat;">
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-num">20+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">50+</span>
+                            <span class="stat-label">Export Countries</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">10,000</span>
+                            <span class="stat-label">m² Factory Area</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">100+</span>
+                            <span class="stat-label">Employees</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p data-i18n="aboutText">HELIDA Tools Co., Ltd. is a high-tech enterprise specializing in the research, development, production and sales of diamond tools. Located in Hebei Province, China, our factory covers an area of over 10,000 square meters with more than 100 skilled employees.</p>
+                    <p data-i18n="aboutText2">We are equipped with advanced automatic and semi-automatic production equipment. Our main products include diamond saw blades, grinding cup wheels, polishing pads and other diamond tools for cutting, grinding and polishing stone, ceramic, concrete, granite, marble and other materials.</p>
+                    <p data-i18n="aboutText3">With strict quality control systems including ISO9001 certification, our products are exported to Europe, America, Middle East, Southeast Asia, Africa and other regions, earning widespread praise from customers worldwide.</p>
+                    <a href="#contact" class="btn btn-primary" data-i18n="contactUs">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Products Section ===== -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="products">Products</span>
+                <h2 class="section-title" data-i18n="productsTitle">Our Products</h2>
+                <div class="section-divider"></div>
+            </div>
+            <!-- Category 1: Turbo Blades -->
+            <div class="product-category">
+                <div class="product-cat-header">
+                    <div class="product-cat-icon"><i class="fas fa-fan"></i></div>
+                    <div class="product-cat-info">
+                        <h3 data-i18n="prodCat3Title">Turbo Blades</h3>
+                        <p data-i18n="prodCat3Desc">Fast-cutting turbo diamond blades for tile, ceramic, porcelain, and multi-purpose dry/wet cutting.</p>
+                    </div>
+                </div>
+                <div class="product-sub-grid">
+                    <div class="product-card product-card-sub">
+                        <div class="product-img"><img src="images/product-4.JPG" alt="Super Spiral Turbo" loading="lazy"></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodCat3Sub1">Super Spiral Turbo Blade</h4>
+                            <span class="product-tag" data-i18n="prodTagSize7">Size: 4.5" (115mm)</span>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-sub">
+                        <div class="product-img"><img src="images/product-2.jpg" alt="Tile Turbo Blade" loading="lazy"></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodCat3Sub2">Tile & Ceramic Turbo Blade</h4>
+                            <span class="product-tag" data-i18n="prodTagSize8">Size: 4" - 14"</span>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-sub product-card-add">
+                        <div class="product-img"><i class="fas fa-plus-circle"></i></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodAddMore">+ More Models</h4>
+                            <span class="product-tag" data-i18n="prodAddMoreDesc">More specifications available</span>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-sub product-card-dummy"></div>
+                </div>
+            </div>
+
+            <!-- Category 2: Stone Cutting Blades -->
+            <div class="product-category">
+                <div class="product-cat-header">
+                    <div class="product-cat-icon"><i class="fas fa-gem"></i></div>
+                    <div class="product-cat-info">
+                        <h3 data-i18n="prodCat1Title">Stone Cutting Blades</h3>
+                        <p data-i18n="prodCat1Desc">Diamond saw blades for granite, marble, quartz, and natural stone. Smooth, chip-free cutting.</p>
+                    </div>
+                </div>
+                <div class="product-sub-grid">
+                    <div class="product-card product-card-sub">
+                        <div class="product-img"><img src="images/product-5.JPG" alt="Granite Blade" loading="lazy"></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodCat1Sub1">Granite Saw Blade</h4>
+                            <span class="product-tag" data-i18n="prodTagSize">Size: 4" - 36"</span>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-sub">
+                        <div class="product-img"><img src="images/product-6.jpg" alt="Marble Blade" loading="lazy"></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodCat1Sub2">Marble Saw Blade</h4>
+                            <span class="product-tag" data-i18n="prodTagSize2">Size: 4" - 24"</span>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-sub">
+                        <div class="product-img"><img src="images/product-3.jpg" alt="Quartz Blade" loading="lazy"></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodCat1Sub3">Quartz & Engineered Stone Blade</h4>
+                            <span class="product-tag" data-i18n="prodTagSize3">Size: 4" - 16"</span>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-sub product-card-add">
+                        <div class="product-img"><i class="fas fa-plus-circle"></i></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodAddMore">+ More Models</h4>
+                            <span class="product-tag" data-i18n="prodAddMoreDesc">More specifications available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: Concrete & Construction Blades -->
+            <div class="product-category">
+                <div class="product-cat-header">
+                    <div class="product-cat-icon"><i class="fas fa-hard-hat"></i></div>
+                    <div class="product-cat-info">
+                        <h3 data-i18n="prodCat2Title">Concrete & Construction Blades</h3>
+                        <p data-i18n="prodCat2Desc">Heavy-duty diamond blades for concrete, reinforced concrete, asphalt, brick, and general construction.</p>
+                    </div>
+                </div>
+                <div class="product-sub-grid">
+                    <div class="product-card product-card-sub">
+                        <div class="product-img"><img src="images/product-7.JPG" alt="Concrete Blade" loading="lazy"></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodCat2Sub1">Concrete Cutting Blade</h4>
+                            <span class="product-tag" data-i18n="prodTagSize4">Size: 12" - 48"</span>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-sub">
+                        <div class="product-img"><img src="images/product-8.JPG" alt="Construction Blade" loading="lazy"></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodCat2Sub2">General Construction Blade</h4>
+                            <span class="product-tag" data-i18n="prodTagSize5">Size: 4" - 14"</span>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-sub">
+                        <div class="product-img"><img src="images/product-1.jpg" alt="Asphalt Blade" loading="lazy"></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodCat2Sub3">Asphalt Cutting Blade</h4>
+                            <span class="product-tag" data-i18n="prodTagSize6">Size: 12" - 36"</span>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-sub product-card-add">
+                        <div class="product-img"><i class="fas fa-plus-circle"></i></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodAddMore">+ More Models</h4>
+                            <span class="product-tag" data-i18n="prodAddMoreDesc">More specifications available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4: Grinding & Polishing -->
+            <div class="product-category">
+                <div class="product-cat-header">
+                    <div class="product-cat-icon"><i class="fas fa-cog"></i></div>
+                    <div class="product-cat-info">
+                        <h3 data-i18n="prodCat4Title">Grinding & Polishing</h3>
+                        <p data-i18n="prodCat4Desc">Diamond grinding cup wheels and polishing pads for surface preparation, grinding, and finishing.</p>
+                    </div>
+                </div>
+                <div class="product-sub-grid">
+                    <div class="product-card product-card-sub">
+                        <div class="product-img"><img src="images/product-9.JPG" alt="Grinding Cup Wheel" loading="lazy"></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodCat4Sub1">Diamond Grinding Cup Wheel</h4>
+                            <span class="product-tag" data-i18n="prodTagSize9">Size: 4" - 7"</span>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-sub">
+                        <div class="product-img"><img src="images/product-10.JPG" alt="Polishing Pads" loading="lazy"></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodCat4Sub2">Diamond Polishing Pad</h4>
+                            <span class="product-tag" data-i18n="prodTagSize0">Size: 3" - 7"</span>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-sub product-card-add">
+                        <div class="product-img"><i class="fas fa-plus-circle"></i></div>
+                        <div class="product-info">
+                            <h4 data-i18n="prodAddMore">+ More Models</h4>
+                            <span class="product-tag" data-i18n="prodAddMoreDesc">More specifications available</span>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-sub product-card-dummy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Certificates Section ===== -->
+    <section class="section certificates" id="certificates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="certificates">Certificates</span>
+                <h2 class="section-title" data-i18n="certTitle">Certificates</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc" data-i18n="certText">Our quality management system is certified to international standards, ensuring consistent product quality and reliability.</p>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>ISO 9001:2015</h3>
+                    <p>Quality Management System</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>CE Certification</h3>
+                    <p>European Conformity</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-check-double"></i></div>
+                    <h3>BV Certification</h3>
+                    <p>Bureau Veritas Certified</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3>MPA Certification</h3>
+                    <p>Material Testing Certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Download Section ===== -->
+    <section class="section download" id="download">
+        <div class="container">
+            <div class="download-box">
+                <div class="download-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <h2 data-i18n="downloadTitle">Download</h2>
+                <p data-i18n="downloadText">Download our latest product catalog to learn more about our full range of diamond tools.</p>
+                <a href="#" class="btn btn-primary btn-lg">
+                    <i class="fas fa-download"></i> <span data-i18n="downloadBtn">Download Catalog</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="contact">Contact</span>
+                <h2 class="section-title" data-i18n="contactTitle">Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-wrap">
+                    <!-- Product Inquiry Indicator -->
+                    <div class="inquiry-product" id="inquiryProduct" style="display:none">
+                        <div class="inquiry-header">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span data-i18n="inquiryAbout">Inquiring About</span>
+                        </div>
+                        <div class="inquiry-card">
+                            <img id="inquiryImg" src="" alt="">
+                            <div class="inquiry-info">
+                                <strong id="inquiryTitle"></strong>
+                                <span id="inquirySize"></span>
+                            </div>
+                            <button class="inquiry-remove" onclick="clearInquiry()" title="Remove">×</button>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/2289894015@qq.com" method="POST" onsubmit="handleContactSubmit(event)">
+                        <input type="hidden" name="_subject" value="HELIDA Website - New Inquiry">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://www.helida-tools.com/#contact">
+                        <input type="hidden" name="Product" id="inquiryProductField" value="">
+                        <input type="hidden" name="Name" value="Website Inquiry">
+                        <input type="hidden" name="Email" value="inquiry@helida-tools.com">
+                        <div class="form-group">
+                            <input type="tel" name="Phone" required data-i18n="contactFormPhone" placeholder="Your Phone / WhatsApp">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" name="Message" required data-i18n="contactFormMsg" placeholder="Your Message (Product, Quantity, Destination...)"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" data-i18n="contactFormSubmit">Send Inquiry</button>
+                    </form>
+                    <div class="form-success" id="formSuccess" style="display:none">
+                        <i class="fas fa-check-circle"></i>
+                        <span data-i18n="contactFormSuccess">Thank you! Your message has been sent.</span>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4 data-i18n="contactAddress">Address</h4>
+                            <p data-i18n="contactAddrVal">Xingtang County, Shijiazhuang, Hebei Province, China</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon-circle"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4 data-i18n="contactPhone">Phone</h4>
+                            <p>16630152768</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon-circle"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4 data-i18n="contactEmail">Email</h4>
+                            <p>2289894015@qq.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon-circle"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4 data-i18n="contactWhatsApp">WhatsApp</h4>
+                            <p>+86 18369576279</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Sina Steel</h3>
-                    <p data-en="Premium stainless steel solutions for all industries" data-ar="حلول الفولاذ المقاوم للصدأ المتميزة لجميع الصناعات">Premium stainless steel solutions for all industries</p>
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><i class="fas fa-cog"></i></div>
+                        <span class="footer-company">HELIDA</span>
+                    </div>
+                    <p data-i18n="footerAbout">HELIDA Tools is a professional manufacturer of diamond tools, committed to providing high-quality cutting, grinding and polishing solutions.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61585195565123" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/yuanqiucui1/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h3 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h3>
+                <div class="footer-col">
+                    <h4 data-i18n="footerLinks">Quick Links</h4>
                     <ul>
-                        <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
-                        <li><a href="#products" data-en="Products" data-ar="المنتجات">Products</a></li>
-                        <li><a href="#about" data-en="About" data-ar="من نحن">About</a></li>
-                        <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                        <li><a href="#home" data-i18n="home">Home</a></li>
+                        <li><a href="#about" data-i18n="about">About Us</a></li>
+                        <li><a href="#products" data-i18n="products">Products</a></li>
+                        <li><a href="#certificates" data-i18n="certificates">Certificates</a></li>
+                        <li><a href="#contact" data-i18n="contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3 data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h3>
-                    <p>+201067902515</p>
-                    <p>+201060977942</p>
-                    <p>sinasteel10@gmail.com</p>
+                <div class="footer-col">
+                    <h4 data-i18n="footerProducts">Products</h4>
+                    <ul>
+                        <li><a href="#products" data-i18n="productCat2">Saw Blades for Ceramic & Tile</a></li>
+                        <li><a href="#products" data-i18n="productCat3">Saw Blades for Stone</a></li>
+                        <li><a href="#products" data-i18n="productCat5">Saw Blades for Granite</a></li>
+                        <li><a href="#products" data-i18n="productCat9">Grinding Cup Wheels</a></li>
+                        <li><a href="#products" data-i18n="productCat10">Polishing Pads</a></li>
+                    </ul>
                 </div>
-                <div class="footer-section">
-                    <h3 data-en="Current Date" data-ar="التاريخ الحالي">Current Date</h3>
-                    <div class="calendar">
-                        <div class="date-display" id="current-date"></div>
-                    </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footerNewsletter">Newsletter</h4>
+                    <p data-i18n="footerNewsletterText">Subscribe for latest products and news.</p>
+                    <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                        <div class="newsletter-input-wrap">
+                            <input type="email" required data-i18n="footerEmailPlaceholder" placeholder="Your email address">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="social-links">
-                    <a href="https://www.facebook.com/share/193xLV6zwg/?mibextid=wwXIfr" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </div>
-                <div class="developer-credit">
-                    <p data-en="Developer Rights: Mahmoud" data-ar="حقوق المطور: Mahmoud">Developer Rights: <a href="https://www.facebook.com/share/19gHnKn7Rj/" target="_blank">Mahmoud</a></p>
-                </div>
+                <p data-i18n="footerCopyright">© 2026 HELIDA Tools Co., Ltd. All Rights Reserved.</p>
+                <p data-i18n="footerPowered">Powered by HELIDA</p>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <!-- ===== Back to Top ===== -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="data/content-data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/content-loader.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
