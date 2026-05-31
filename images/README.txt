@@ -1,1 +1,0 @@
-# Upload product images here
